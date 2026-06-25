@@ -1,14 +1,16 @@
-/* Show a large, edge-to-edge photography banner on the resume homepage. */
+/* Match the homepage banner container to the panorama's native aspect ratio. */
 #section-resume-biography > div:nth-of-type(2) > div > div {
-  height: clamp(22rem, 56vw, 42rem) !important;
+  aspect-ratio: 2537 / 1080;
+  height: auto !important;
+  max-height: none !important;
   background: #020617;
 }
 
 #section-resume-biography > div:nth-of-type(2) img {
   width: 100%;
   height: 100%;
-  object-fit: cover !important;
-  object-position: center 42%;
+  object-fit: contain !important;
+  object-position: center center;
   background: #020617;
 }
 
@@ -391,14 +393,6 @@
 }
 
 @media (max-width: 640px) {
-  #section-resume-biography > div:nth-of-type(2) > div > div {
-    height: 24rem !important;
-  }
-
-  #section-resume-biography > div:nth-of-type(2) img {
-    object-position: center center;
-  }
-
   .publication-card {
     grid-template-columns: 1fr;
   }
