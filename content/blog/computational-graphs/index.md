@@ -38,7 +38,7 @@ In this tutorial, a graph represent $z = x^2 + x*y + y^2 \mod p$ with graph:
 
 <img src="./dag_visualizations/x2_xy_y2.png" alt="x^2 + x*y + y^2" width="800">
 
-Each sample keeps the same graph topology but assigns different values to input nodes `x` and `y`. This tutorial runs one forward pass through TRACE to show how the graph is represented and how information flows through the model.
+Each sample keeps the same graph topology but assigns different values to input nodes x and y. This tutorial runs one forward pass through TRACE to show how the graph is represented and how information flows through the model.
 
 ## Circuits into Unified Computational Graph
 
@@ -46,13 +46,13 @@ Although circuit datasets come from different abstraction levels, we convert eac
 
 ### And-Inverter Graph (AIG)
 
-AIG already has a graph-like structure. We map primary inputs, AND gates, NOT/inverter operations, and optional sequential registers to node types. Edges preserve signal flow and input order. For example, `Y = NOT(A) AND B` becomes a small computational graph with two PI nodes, one inverter node, and one AND output node.
+AIG already has a graph-like structure. We map primary inputs, AND gates, NOT/inverter operations, and optional sequential registers to node types. Edges preserve signal flow and input order. For example, Y = NOT(A) AND B becomes a small computational graph with two PI nodes, one inverter node, and one AND output node.
 
 <img src="./circuit_visualizations/aig_not_a_and_b.png" alt="AIG computational graph example" width="400">
 
 ### Post-Mapping Netlist
 
-For a post-mapping netlist, we treat each standard-cell instance as an operation node and each net as a directed dependency between cell inputs and outputs. This keeps technology-mapped information, such as NAND2 and INV, instead of reducing everything to abstract Boolean operators. For example, `Y = INV(NAND2(A, B))` is represented by PI nodes feeding a NAND2 cell node, followed by an INV output node.
+For a post-mapping netlist, we treat each standard-cell instance as an operation node and each net as a directed dependency between cell inputs and outputs. This keeps technology-mapped information, such as NAND2 and INV, instead of reducing everything to abstract Boolean operators. For example, Y = INV(NAND2(A, B)) is represented by PI nodes feeding a NAND2 cell node, followed by an INV output node.
 
 <img src="./circuit_visualizations/pm_inv_nand2.png" alt="Post-mapping netlist computational graph example" width="400">
 
@@ -72,9 +72,9 @@ always @(posedge clk) begin
 end
 ```
 
-The visualization below uses the forward data-flow view for readability: `R0` and `R1` feed an `ADD` operator, and the result is written into register `R2`. The temporary wire `W1` is omitted from the figure because it only forwards the operator result.
+The visualization below uses the forward data-flow view for readability: R0 and R1 feed an ADD operator, and the result is written into register R2. The temporary wire W1 is omitted from the figure because it only forwards the operator result.
 
-In the actual parser used by `tasks/contrastive/rtl/data_prep`, each graph is extracted as a cone rooted at a register endpoint. Temporary wires such as `W1` may be eliminated during graph construction, but the same computation dependency is preserved.
+In the actual parser used by tasks/contrastive/rtl/data_prep, each graph is extracted as a cone rooted at a register endpoint. Temporary wires such as W1 may be eliminated during graph construction, but the same computation dependency is preserved.
 
 <img src="./circuit_visualizations/rtl_register_wire_update.png" alt="RTL computational graph example" width="400">
 
@@ -90,13 +90,13 @@ At the local level, each vertex represents an atomic computation, such as an ari
 
 #### Position Awareness
 
-Many computational operations are sensitive to input order. For example, in `Sub(x, y)`, the first and second operands have different semantic roles. Swapping them changes the operation from `x - y` to `y - x`.
+Many computational operations are sensitive to input order. For example, in Sub(x, y), the first and second operands have different semantic roles. Swapping them changes the operation from x - y to y - x.
 
 Therefore, a computational graph model must distinguish input positions or ports. It should know which operand enters which position, rather than treating all inputs as interchangeable.
 
 #### Interaction Modeling
 
-An operator is usually defined by the joint relationship among its inputs. For example, in `x * y`, the contribution of `x` depends on the value of `y`, and vice versa.
+An operator is usually defined by the joint relationship among its inputs. For example, in x * y, the contribution of x depends on the value of y, and vice versa.
 
 Thus, the model must capture interactions among operands, not merely process each input separately. This is necessary for representing the functional behavior of arithmetic, logical, and other computational operators.
 
@@ -108,7 +108,7 @@ At the global level, a computational graph encodes the flow of computation acros
 
 A key challenge is path reconvergence, where one variable branches into multiple paths and later merges again. The merged signals may look separate locally, but they remain correlated because they share the same origin.
 
-For example, in `z = x AND NOT x`, even if `x` and `NOT x` appear as two inputs to the final operator, they are strictly dependent. The correct result is always `z = 0`.
+For example, in z = x AND NOT x, even if x and NOT x appear as two inputs to the final operator, they are strictly dependent. The correct result is always z = 0.
 
 This means the model must capture long-range dependencies and shared ancestry in the graph. Without this ability, it may misinterpret correlated signals as independent.
 
@@ -126,7 +126,7 @@ The minimal TRACE encoder in [model.py](https://github.com/zyzheng17/TRACE_DAC26
 1. Initialize each node by operation type and input value.
 2. Visit nodes level by level in topological order.
 3. For each operator node, collect its ordered input operands with positional embeddings.
-4. Apply a small Transformer over `[operator token, input 0, input 1, ...]`.
+4. Apply a small Transformer over [operator token, input 0, input 1, ...].
 5. Read out the designated output node.
 
 This mirrors the TRACE idea used in the main circuit tasks: preserve computational order, preserve operand positions, and model local operator interactions with an expressive set encoder.
@@ -135,16 +135,16 @@ This mirrors the TRACE idea used in the main circuit tasks: preserve computation
 
 Available expressions:
 
-- `add`: `(x + y) mod p`
-- `sub`: `(x - y) mod p`
-- `xy`: `(x * y) mod p`
-- `x2_y2`: `(x^2 + y^2) mod p`
-- `x2_xy_y2`: `(x^2 + x*y + y^2) mod p`
-- `x2_xy_y2_x`: `(x^2 + x*y + y^2 + x) mod p`
-- `x3_xy`: `(x^3 + x*y) mod p`
-- `x3_xy2_y`: `(x^3 + x*y^2 + y) mod p`
+- add: (x + y) mod p
+- sub: (x - y) mod p
+- xy: (x * y) mod p
+- x2_y2: (x^2 + y^2) mod p
+- x2_xy_y2: (x^2 + x*y + y^2) mod p
+- x2_xy_y2_x: (x^2 + x*y + y^2 + x) mod p
+- x3_xy: (x^3 + x*y) mod p
+- x3_xy2_y: (x^3 + x*y^2 + y) mod p
 
-The `x^2` and `x^3` terms are expanded into multiplication nodes, not separate power operators. See [expr_graphs.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/expr_graphs.py) for the graph templates and [dag_visualizations/README.md](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/dag_visualizations/README.md) for rendered examples.
+The x^2 and x^3 terms are expanded into multiplication nodes, not separate power operators. See [expr_graphs.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/expr_graphs.py) for the graph templates and [dag_visualizations/README.md](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/dag_visualizations/README.md) for rendered examples.
 
 ## Run The Demo
 
@@ -245,6 +245,6 @@ We recursivly repeat above flow in level 2,3,4 until we traverse all the node.
 - [data.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/data.py): modular arithmetic ground-truth functions.
 - [model.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/model.py): minimal TRACE-style encoder.
 - [demo.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/demo.py): one-pass tutorial that prints graph construction, model architecture, forward flow, and input/output tensors.
-- `assets/`: figures copied from the computational-graph paper draft.
-- `circuit_visualizations/`: example DAG visualizations for AIG, post-mapping netlist, and RTL conversion.
-- `dag_visualizations/`: arithmetic-expression DAG visualizations used in this tutorial.
+- assets/: figures copied from the computational-graph paper draft.
+- circuit_visualizations/: example DAG visualizations for AIG, post-mapping netlist, and RTL conversion.
+- dag_visualizations/: arithmetic-expression DAG visualizations used in this tutorial.
