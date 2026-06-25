@@ -20,6 +20,27 @@
   border-radius: 9999px !important;
 }
 
+#profile .hb-ruby-name {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.35rem;
+  ruby-position: under;
+}
+
+#profile .hb-ruby-name rt {
+  display: block;
+  color: rgb(71, 85, 105);
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+.dark #profile .hb-ruby-name rt {
+  color: rgb(203, 213, 225);
+}
+
 .publication-cards {
   padding: 4rem 1rem;
 }
