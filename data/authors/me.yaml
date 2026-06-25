@@ -129,6 +129,11 @@ awards:
     awarder: ICCAD 2024
     summary: |
       Zhengyuan Shi*, **Ziyang Zheng***, Sadaf Khan, Jianyuan Zhong, Min Li, and Qiang Xu.
+  - title: "Large Circuit Models: Opportunities and Challenges"
+    date: "2024-09-25"
+    awarder: Science China Information Sciences
+    summary: |
+      Lei Chen, Yiqi Chen, Zhufei Chu, Wenji Fang, Tsung-Yi Ho, Ru Huang, Yu Huang, Sadaf Khan, Min Li, Xingquan Li, Yu Li, Yun Liang, Jinwei Liu, Yi Liu, Yibo Lin, Guojie Luo, Hongyang Pan, Zhengyuan Shi, Guangyu Sun, Dimitrios Tsaras, Runsheng Wang, Ziyi Wang, Xinming Wei, Zhiyao Xie, Qiang Xu, Chenhao Xue, Junchi Yan, Jun Yang, Bei Yu, Mingxuan Yuan, Evangeline F. Y. Young, Xuan Zeng, Haoyi Zhang, Zuodong Zhang, Yuxiang Zhao, Hui-Ling Zhen, **Ziyang Zheng**, Binwu Zhu, Keren Zhu, and Sunan Zou.
   - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
     date: "2025-01-01"
     awarder: ASP-DAC 2025, Best Paper Nomination

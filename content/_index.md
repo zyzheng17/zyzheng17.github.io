@@ -136,6 +136,12 @@ sections:
           theme: gate
           image: papers/deepgate3.jpg
           url: https://arxiv.org/abs/2407.11095
+        - title: "Large Circuit Models: Opportunities and Challenges"
+          venue: "Science China Information Sciences, 2024"
+          authors: "Lei Chen, Yiqi Chen, Zhufei Chu, Wenji Fang, Tsung-Yi Ho, Ru Huang, Yu Huang, Sadaf Khan, Min Li, Xingquan Li, Yu Li, Yun Liang, Jinwei Liu, Yi Liu, Yibo Lin, Guojie Luo, Hongyang Pan, Zhengyuan Shi, Guangyu Sun, Dimitrios Tsaras, Runsheng Wang, Ziyi Wang, Xinming Wei, Zhiyao Xie, Qiang Xu, Chenhao Xue, Junchi Yan, Jun Yang, Bei Yu, Mingxuan Yuan, Evangeline F. Y. Young, Xuan Zeng, Haoyi Zhang, Zuodong Zhang, Yuxiang Zhao, Hui-Ling Zhen, **Ziyang Zheng**, Binwu Zhu, Keren Zhu, and Sunan Zou."
+          theme: circuit
+          image: papers/large-circuit-models.jpg
+          url: https://arxiv.org/abs/2403.07257
         - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
           venue: "MICCAI 2023"
           authors: "**Ziyang Zheng***, Jiewen Yang*, Xinpeng Ding, Xiaowei Xu, and Xiaomeng Li."
