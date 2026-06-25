@@ -47,7 +47,16 @@ experience:
     org: Noah's Ark Lab, Huawei, Hong Kong
     start: 2025-12-01
     summary: |
-      Research on self-distillation and on-policy distillation.
+      Research on self-distillation and on-policy distillation for efficient
+      model reasoning and deployment.
+  - role: LLM Compression, Self-Distillation, and On-Policy Distillation
+    org: CURE Lab, CUHK
+    start: 2025-01-01
+    summary: |
+      I work on compressing LLM reasoning processes and managing long-context
+      memory, including step-entropy-based chain-of-thought compression, latent
+      memory management, hierarchical multi-agent memory systems, and on-policy
+      distillation.
   - role: Computational Graphs, Optimization, and Neural Reasoning
     org: CURE Lab, CUHK
     start: 2024-01-01
@@ -119,7 +128,7 @@ awards:
     date: "2024-10-01"
     awarder: ICCAD 2024
     summary: |
-      Zhengyuan Shi, **Ziyang Zheng**, Sadaf Khan, Jianyuan Zhong, Min Li, and Qiang Xu.
+      Zhengyuan Shi*, **Ziyang Zheng***, Sadaf Khan, Jianyuan Zhong, Min Li, and Qiang Xu.
   - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
     date: "2025-01-01"
     awarder: ASP-DAC 2025, Best Paper Nomination
@@ -129,17 +138,17 @@ awards:
     date: "2025-02-01"
     awarder: WACV 2025
     summary: |
-      **Ziyang Zheng**, Ruiyuan Gao, and Qiang Xu.
+      **Ziyang Zheng***, Ruiyuan Gao, and Qiang Xu.
   - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
     date: "2023-10-01"
     awarder: MICCAI 2023
     summary: |
-      **Ziyang Zheng**, Jiewen Yang, Xinpeng Ding, Xiaowei Xu, and Xiaomeng Li.
+      **Ziyang Zheng***, Jiewen Yang*, Xinpeng Ding, Xiaowei Xu, and Xiaomeng Li.
   - title: "TRACE: Learning to Compute on Circuit Graphs"
     date: "2026-06-01"
     awarder: DAC 2026
     summary: |
-      **Ziyang Zheng**, Jiaying Zhu, Jingyi Zhou, and Qiang Xu.
+      **Ziyang Zheng***, Jiaying Zhu*, Jingyi Zhou, and Qiang Xu.
   - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
     date: "2026-04-01"
     awarder: ICLR 2026

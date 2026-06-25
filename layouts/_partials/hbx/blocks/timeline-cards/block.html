@@ -1,0 +1,25 @@
+{{ $block := . }}
+{{ with .wcBlock }}{{ $block = . }}{{ end }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+<section id="{{ $block.id | default ($content.title | anchorize) }}" class="timeline-cards hbb-section">
+  <div class="timeline-cards-container">
+    {{ with $content.title }}
+      <h2 class="timeline-cards-title">{{ . }}</h2>
+    {{ end }}
+
+    <div class="timeline-list">
+      {{ range $content.items }}
+        <article class="timeline-card">
+          <div class="timeline-date">{{ .date }}</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">{{ .role }}</h3>
+            {{ with .org }}<div class="timeline-org">{{ . }}</div>{{ end }}
+            {{ with .summary }}<div class="timeline-summary">{{ . | markdownify }}</div>{{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
