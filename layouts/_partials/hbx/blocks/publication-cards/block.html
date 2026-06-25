@@ -1,12 +1,15 @@
 {{ $block := . }}
+{{ with .wcBlock }}{{ $block = . }}{{ end }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
 <section id="{{ $block.id | default "selected-publications" }}" class="publication-cards hbb-section">
   <div class="publication-cards-container">
-    {{ with $block.content.title }}
+    {{ with $content.title }}
       <h2 class="publication-cards-title">{{ . }}</h2>
     {{ end }}
 
     <div class="publication-grid">
-      {{ range $block.content.items }}
+      {{ range $content.items }}
         <article class="publication-card">
           <div class="publication-thumb publication-thumb-{{ .theme | default "default" }}" aria-hidden="true">
             <span class="node node-a"></span>
