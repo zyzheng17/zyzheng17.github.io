@@ -148,8 +148,4 @@ sections:
           theme: fusion
           image: papers/gl-fusion.jpg
           url: https://arxiv.org/abs/2309.11144
-  - block: languages
-    content:
-      title: Languages
-      username: me
 ---
