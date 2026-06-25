@@ -20,23 +20,20 @@
         {{ if $image }}
           {{ $img = resources.Get (printf "media/%s" $image) }}
         {{ end }}
-        <article class="photo-blog-card">
+        <a class="photo-blog-card" href="{{ .url }}">
           <div class="photo-blog-thumb{{ if $img }} photo-blog-thumb-has-image{{ end }}">
             {{ if $img }}
               {{ $thumb := $img.Fit "720x405 webp q86" }}
-              <a href="{{ .url }}">
-                <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} thumbnail" loading="lazy">
-              </a>
+              <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} thumbnail" loading="lazy">
             {{ end }}
           </div>
           <div class="photo-blog-card-body">
             {{ with .date }}<div class="photo-blog-date">{{ . }}</div>{{ end }}
-            <h3 class="photo-blog-title">
-              <a href="{{ .url }}">{{ .title }}</a>
-            </h3>
+            <h3 class="photo-blog-title">{{ .title }}</h3>
             {{ with .summary }}<p class="photo-blog-summary">{{ . }}</p>{{ end }}
+            <span class="photo-blog-read-more">Read Post</span>
           </div>
-        </article>
+        </a>
       {{ end }}
     </div>
   </div>
