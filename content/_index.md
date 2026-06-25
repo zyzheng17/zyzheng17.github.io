@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Ziyang Zheng'
 date: 2023-10-24
 type: landing
 
@@ -12,15 +12,15 @@ sections:
       username: me
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download Résumé
-        url: uploads/resume.pdf
+        text: Google Scholar
+        url: https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=en
     design:
       show_status: false
       spacing:
         padding: ['0', '0', '6rem', '0']
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
-        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
+        filename: background.jpg
       biography:
         # Customize the style of your biography text
         style: 'text-align: justify; font-size: 0.8em;'
@@ -38,11 +38,11 @@ sections:
       is_education_first: false
   - block: skills
     content:
-      title: Skills & Hobbies
+      title: Research Interests & Hobbies
       username: me
   - block: awards
     content:
-      title: Awards
+      title: Selected Publications
       username: me
   - block: languages
     content:

@@ -2,132 +2,148 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: 吳健雄
-  given: Shiung Wu
-  family: Chien
-  pronunciation: Chien Shiung Wu
-  pronouns: she/her
+  display: Ziyang Zheng
+  given: Ziyang
+  family: Zheng
+  pronunciation: Ziyang Zheng
 status:
-  icon: "☕️"
-role: Director of Cloud Infrastructure
+  icon: "📚"
+role: Ph.D. Student in Computer Science and Engineering
 bio: >
-  I am currently Director of Cloud Infrastructure at GenCoin where I am leading
-  teams on edge computing, deep sea data center architecture, and hivemind
-  optimization.
+  I am a Ph.D. student in the CURE Lab at The Chinese University of Hong Kong,
+  advised by Prof. Qiang Xu. My research interests include AI for EDA, graph
+  representation learning, neural reasoning, diffusion models, and LLM
+  compression. Before joining CUHK, I received my bachelor's degree in
+  Mathematical Sciences from Harbin Institute of Technology (Shenzhen), where I
+  majored in Data Science within the Mathematics discipline. I am always open to
+  research collaboration and discussion.
 affiliations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: CURE Lab, The Chinese University of Hong Kong
+    url: https://www.cse.cuhk.edu.hk/
 links:
   - icon: at-symbol
-    url: mailto:your-email@example.com
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/GoOwnable
+    url: mailto:zyzheng23@cse.cuhk.edu.hk
+    label: E-mail
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://github.com/zyzheng17
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=en
 education:
-  - degree: PhD Artificial Intelligence
-    institution: Stanford University
-    start: 2016-01-01
-    end: 2020-12-31
+  - degree: Ph.D. Candidate, Computer Science and Engineering
+    institution: The Chinese University of Hong Kong
+    start: 2023-08-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: "Read Thesis"
-      url: "https://example.com"
-  - degree: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    start: 2016-01-01
-    end: 2020-12-31
+      Advisor: Prof. Qiang Xu.
+  - degree: Bachelor, Mathematical Sciences
+    institution: Harbin Institute of Technology (Shenzhen)
+    start: 2019-07-01
+    end: 2023-06-30
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - degree: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    start: 2016-01-01
-    end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Major in Data Science within the Mathematics discipline.
+      - Rank: 2/64
+      - China National Scholarship, 2021
 experience:
-  - role: Director of Cloud Infrastructure
-    org: GenCoin
-    start: 2021-01-01
+  - role: Research Intern
+    org: Noah's Ark Lab, Huawei, Hong Kong
+    start: 2025-12-01
     summary: |
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - role: Backend Software Engineer
-    org: X
-    start: 2016-01-01
-    end: 2020-12-31
+      Research on self-distillation and on-policy distillation.
+  - role: Computational Graphs, Optimization, and Neural Reasoning
+    org: CURE Lab, CUHK
+    start: 2024-01-01
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      I work on scalable circuit representation learning, functional matching
+      of logic subgraphs, and learning to compute on graphs.
+  - role: Diffusion Models and Semantic Consistency
+    org: CURE Lab, CUHK
+    start: 2023-01-01
+    end: 2024-12-31
+    summary: |
+      Research on non-cross diffusion and flow consistency for semantic
+      consistency.
+  - role: Multi-modal Video Segmentation and Transfer Learning
+    org: Harbin Institute of Technology (Shenzhen)
+    start: 2022-01-01
+    end: 2023-12-31
+    summary: |
+      Research on global-local fusion and graph-driven transfer learning for
+      echocardiogram video segmentation.
 skills:
-  - name: Technical Skills
+  - name: Research Interests
+    items:
+      - label: AI for EDA
+        level: 5
+      - label: Graph Representation Learning
+        level: 5
+      - label: Neural Reasoning
+        level: 4
+      - label: Diffusion Models
+        level: 4
+      - label: LLM Compression
+        level: 4
+      - label: Self-Distillation
+        level: 4
+  - name: Programming
     items:
       - label: Python
-        level: 4
-      - label: RStudio
         level: 5
+      - label: C++
+        level: 4
       - label: PyTorch
-        level: 2
+        level: 4
   - name: Hobbies
     color: "#eeac02"
     color_border: "#f0bf23"
     items:
-      - label: Hiking
-        level: 3
-      - label: Cats
-        level: 5
       - label: Photography
+        level: 5
+      - label: Travel
         level: 4
 languages:
-  - name: English
-    level: 5
   - name: Chinese
+    level: 5
+  - name: English
     level: 4
-  - name: Portuguese
-    level: 1
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: "2023-11-25"
-    awarder: Coursera
-    icon: brands/coursera
+  - title: "DeepGate4: Efficient and Effective Representation Learning for Circuit Design at Scale"
+    date: "2025-04-01"
+    awarder: ICLR 2025
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: "2023-07-01"
-    awarder: edX
-    icon: brands/edx
+      Ziyang Zheng, Shan Huang, Jianyuan Zhong, Zhengyuan Shi, Guohao Dai,
+      Ningyi Xu, and Qiang Xu.
+  - title: "Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism"
+    date: "2025-12-01"
+    awarder: NeurIPS 2025
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: "Object-Oriented Programming in R"
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: "2023-01-21"
-    awarder: datacamp
-    icon: brands/datacamp
+      Ziyang Zheng, Kezhi Li, Zhengyuan Shi, and Qiang Xu.
+  - title: "DeepGate3: Towards Scalable Circuit Representation Learning"
+    date: "2024-10-01"
+    awarder: ICCAD 2024
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Zhengyuan Shi*, Ziyang Zheng*, Saad Khan, Jianyuan Zhong, Min Li, and
+      Qiang Xu.
+  - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
+    date: "2025-01-01"
+    awarder: ASP-DAC 2025, Best Paper Nomination
+    summary: |
+      Saad Khan, Zhengyuan Shi, Ziyang Zheng, and collaborators.
+  - title: "Non-Cross Diffusion for Semantic Consistency"
+    date: "2025-02-01"
+    awarder: WACV 2025
+    summary: |
+      Ziyang Zheng, Ruiyuan Gao, and Qiang Xu.
+  - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
+    date: "2023-10-01"
+    awarder: MICCAI 2023
+    summary: |
+      Ziyang Zheng*, Jiewen Yang*, Xinpeng Ding, and collaborators.
+  - title: "TRACE: Learning to Compute on Graphs"
+    date: "2026-06-01"
+    awarder: DAC 2026
+    summary: |
+      Ziyang Zheng*, Jiaqi Zhu*, Jiaming Zhou, and collaborators.
+  - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
+    date: "2026-04-01"
+    awarder: ICLR 2026
+    summary: |
+      Zhe Li, Jianyuan Zhong, Ziyang Zheng, and collaborators.

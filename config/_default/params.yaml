@@ -13,19 +13,20 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Ziyang Zheng"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "Ph.D. Student at The Chinese University of Hong Kong"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "Ziyang Zheng is a Ph.D. student at The Chinese University of
+      Hong Kong working on AI for EDA, graph representation learning, neural
+      reasoning, diffusion models, and LLM compression."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
+      twitter: "" # Twitter/X handle for Twitter Cards (without @)
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -95,8 +96,8 @@ hugoblox:
     # Call-to-action button
     cta:
       enable: true
-      text: "Download Résumé"
-      url: "uploads/resume.pdf"
+      text: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=en"
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER
@@ -147,7 +148,7 @@ hugoblox:
         - /
       disallow: []
       note: "Guidance for AI crawlers - customize to match your public content."
-      contact: ""
+      contact: "zyzheng23@cse.cuhk.edu.hk"
 
   # ────────────────────────────────────────────────────────────────────────────
   # CONTENT

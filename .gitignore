@@ -12,6 +12,8 @@ public/
 # Hugo resources (processed assets)
 resources/
 
+resume.tex
+
 # Hugo build lock
 .hugo_build.lock
 
