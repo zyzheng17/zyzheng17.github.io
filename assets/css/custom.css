@@ -208,8 +208,13 @@
   }
 
   .page-body.my-10 article > main {
+    max-width: 58rem !important;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .page-body.my-10 article .prose {
+    max-width: 100%;
   }
 }
 
