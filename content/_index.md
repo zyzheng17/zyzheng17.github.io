@@ -33,7 +33,7 @@ sections:
           date: "August 2023 – Present"
           summary: |
             Advisor: Prof. Qiang Xu.
-        - role: Bachelor, Mathematical Sciences
+        - role: Bachelor, Data Sciences
           org: Harbin Institute of Technology (Shenzhen)
           date: "July 2019 – June 2023"
           summary: |
@@ -49,7 +49,7 @@ sections:
           org: Noah's Ark Lab, Huawei, Hong Kong
           date: "December 2025 – Present"
           summary: |
-            Research on self-distillation and on-policy distillation for efficient model reasoning and deployment.
+            Research on self-distillation and on-policy distillation.
   - block: timeline-cards
     content:
       title: Research Experience

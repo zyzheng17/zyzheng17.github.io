@@ -11,9 +11,9 @@ status:
 role: Ph.D. Student in Computer Science and Engineering
 bio: >
   I am a Ph.D. student in the CURE Lab at The Chinese University of Hong Kong,
-  advised by Prof. Qiang Xu. My research interests include AI for EDA, graph
-  representation learning, neural reasoning, diffusion models, and LLM
-  compression. Before joining CUHK, I received my bachelor's degree in
+  advised by Prof. Qiang Xu. My research interests include computational graphs, 
+  neural reasoning, diffusion models, self-distillation, and on-policy distillation. 
+  Before joining CUHK, I received my bachelor's degree in
   Mathematical Sciences from Harbin Institute of Technology (Shenzhen), where I
   majored in Data Science within the Mathematics discipline. I am always open to
   research collaboration and discussion. Email: zyzheng23@cse.cuhk.edu.hk.
