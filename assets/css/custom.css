@@ -217,7 +217,7 @@
   }
 }
 
-.prose a {
+.prose a[href^="https://github.com/zyzheng17/TRACE_DAC26"] {
   color: #2563eb;
   text-decoration: underline;
   text-decoration-thickness: 0.08em;
@@ -225,15 +225,15 @@
   font-weight: 650;
 }
 
-.prose a:hover {
+.prose a[href^="https://github.com/zyzheng17/TRACE_DAC26"]:hover {
   color: #1d4ed8;
 }
 
-.dark .prose a {
+.dark .prose a[href^="https://github.com/zyzheng17/TRACE_DAC26"] {
   color: #93c5fd;
 }
 
-.dark .prose a:hover {
+.dark .prose a[href^="https://github.com/zyzheng17/TRACE_DAC26"]:hover {
   color: #bfdbfe;
 }
 
