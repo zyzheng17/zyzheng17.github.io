@@ -8,28 +8,15 @@
   background: #020617 url("/banner.jpg") center / contain no-repeat;
 }
 
-#section-resume-biography > div:nth-of-type(2) > div > div::before {
-  position: absolute;
-  inset: 46% 0 0;
-  content: "";
-  background: url("/banner.jpg") center / contain no-repeat;
-  filter: blur(14px);
-  opacity: 0.72;
-  transform: scale(1.025);
-  transform-origin: center bottom;
-  mask-image: linear-gradient(to bottom, transparent 0%, black 34%, black 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 34%, black 100%);
-}
-
 #section-resume-biography > div:nth-of-type(2) > div > div::after {
   position: absolute;
-  inset: 42% 0 0;
+  inset: 48% 0 0;
   content: "";
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(255, 255, 255, 0.42) 62%,
-    rgba(255, 255, 255, 0.86)
+    rgba(255, 255, 255, 0.28) 68%,
+    rgba(255, 255, 255, 0.58)
   );
 }
 
@@ -37,8 +24,8 @@
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(15, 23, 42, 0.36) 62%,
-    rgba(15, 23, 42, 0.82)
+    rgba(15, 23, 42, 0.24) 68%,
+    rgba(15, 23, 42, 0.56)
   );
 }
 
