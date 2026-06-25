@@ -238,6 +238,11 @@
   color: #bfdbfe;
 }
 
+.prose :not(pre) > code::before,
+.prose :not(pre) > code::after {
+  content: none;
+}
+
 .timeline-summary p,
 .timeline-summary ul {
   margin: 0.35rem 0 0;
