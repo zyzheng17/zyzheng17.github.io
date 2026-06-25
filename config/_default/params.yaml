@@ -95,9 +95,9 @@ hugoblox:
     language_switcher: true
     # Call-to-action button
     cta:
-      enable: true
-      text: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=en"
+      enable: false
+      text: ""
+      url: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER

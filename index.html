@@ -137,6 +137,11 @@
         margin-top: 42px;
       }
 
+      .email-line {
+        color: var(--muted);
+        font-size: 17px;
+      }
+
       h2 {
         margin: 0 0 16px;
         font-size: 18px;
@@ -151,6 +156,56 @@
         line-height: 1.65;
       }
 
+      .pub-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 14px;
+      }
+
+      .pub-card {
+        display: grid;
+        grid-template-columns: 88px 1fr;
+        gap: 14px;
+        padding: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .pub-thumb {
+        position: relative;
+        overflow: hidden;
+        min-height: 88px;
+        border-radius: 14px;
+        background:
+          radial-gradient(circle at 22% 22%, rgba(255, 255, 255, 0.38), transparent 26%),
+          linear-gradient(135deg, #0f172a, #2563eb);
+      }
+
+      .pub-card h3 {
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.35;
+      }
+
+      .pub-card p {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .venue {
+        display: inline-flex;
+        margin-bottom: 8px;
+        border-radius: 999px;
+        padding: 3px 8px;
+        color: #bfdbfe;
+        background: rgba(147, 197, 253, 0.15);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
       @media (max-aspect-ratio: 3 / 2) {
         body {
           background-position: center center;
@@ -162,6 +217,10 @@
         .profile {
           align-items: flex-start;
           flex-direction: column;
+        }
+
+        .pub-card {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -183,6 +242,7 @@
               AI for EDA, graph representation learning, neural reasoning,
               diffusion models, and LLM compression.
             </p>
+            <p class="email-line">Email: zyzheng23@cse.cuhk.edu.hk</p>
           </div>
         </header>
 
@@ -193,26 +253,33 @@
         </nav>
 
         <section class="section">
-          <h2>Research Interests</h2>
-          <div class="tags">
-            <span class="tag">AI for EDA</span>
-            <span class="tag">Graph Representation Learning</span>
-            <span class="tag">Neural Reasoning</span>
-            <span class="tag">Diffusion Models</span>
-            <span class="tag">LLM Compression</span>
-            <span class="tag">Self-Distillation</span>
-          </div>
-        </section>
-
-        <section class="section">
           <h2>Selected Publications</h2>
-          <ul>
-            <li>DeepGate4: Efficient and Effective Representation Learning for Circuit Design at Scale, ICLR 2025.</li>
-            <li>Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism, NeurIPS 2025.</li>
-            <li>DeepGate3: Towards Scalable Circuit Representation Learning, ICCAD 2024.</li>
-            <li>Non-Cross Diffusion for Semantic Consistency, WACV 2025.</li>
-            <li>TRACE: Learning to Compute on Graphs, DAC 2026.</li>
-          </ul>
+          <div class="pub-grid">
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">Under review</span><h3>Context Distillation with Latent Memory Management</h3><p>Ziyang Zheng and collaborators.</p></div>
+            </article>
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">Under review</span><h3>HMARS: Hierarchical Multi-Agent Long-Context Memory Management System</h3><p>Zhe Li, Ziyang Zheng, and collaborators.</p></div>
+            </article>
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">Under review</span><h3>CASCAD: Circuit-Aware SAT Solving via Learned Conditional Probabilities</h3><p>Jiaqi Zhu*, Ziyang Zheng*, and collaborators.</p></div>
+            </article>
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">DAC 2026</span><h3>TRACE: Learning to Compute on Graphs</h3><p>Ziyang Zheng*, Jiaqi Zhu*, Jiaming Zhou, and collaborators.</p></div>
+            </article>
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">ICLR 2026</span><h3>Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy</h3><p>Zhe Li, Jianyuan Zhong, Ziyang Zheng, and collaborators.</p></div>
+            </article>
+            <article class="pub-card">
+              <div class="pub-thumb" aria-hidden="true"></div>
+              <div><span class="venue">NeurIPS 2025</span><h3>Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism</h3><p>Ziyang Zheng, Kezhi Li, Zhengyuan Shi, and Qiang Xu.</p></div>
+            </article>
+          </div>
         </section>
       </article>
     </main>

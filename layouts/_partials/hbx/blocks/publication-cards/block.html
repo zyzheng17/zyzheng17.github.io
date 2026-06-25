@@ -1,0 +1,32 @@
+{{ $block := . }}
+<section id="{{ $block.id | default "selected-publications" }}" class="publication-cards hbb-section">
+  <div class="publication-cards-container">
+    {{ with $block.content.title }}
+      <h2 class="publication-cards-title">{{ . }}</h2>
+    {{ end }}
+
+    <div class="publication-grid">
+      {{ range $block.content.items }}
+        <article class="publication-card">
+          <div class="publication-thumb publication-thumb-{{ .theme | default "default" }}" aria-hidden="true">
+            <span class="node node-a"></span>
+            <span class="node node-b"></span>
+            <span class="node node-c"></span>
+            <span class="node node-d"></span>
+            <span class="flow flow-a"></span>
+            <span class="flow flow-b"></span>
+            <span class="flow flow-c"></span>
+          </div>
+          <div class="publication-card-body">
+            <div class="publication-meta-row">
+              {{ with .venue }}<span class="publication-venue">{{ . }}</span>{{ end }}
+              {{ with .status }}<span class="publication-status">{{ . }}</span>{{ end }}
+            </div>
+            <h3 class="publication-title">{{ .title }}</h3>
+            {{ with .authors }}<p class="publication-authors">{{ . }}</p>{{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

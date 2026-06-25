@@ -20,6 +20,209 @@
   border-radius: 9999px !important;
 }
 
+.publication-cards {
+  padding: 4rem 1rem;
+}
+
+.publication-cards-container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.publication-cards-title {
+  margin: 0 0 1.75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 1rem;
+  min-height: 148px;
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.dark .publication-card {
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.publication-thumb {
+  position: relative;
+  min-height: 116px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.42), transparent 24%),
+    linear-gradient(135deg, #0f172a, #2563eb);
+}
+
+.publication-thumb::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.38;
+}
+
+.publication-thumb .node,
+.publication-thumb .flow {
+  position: absolute;
+  display: block;
+}
+
+.publication-thumb .node {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.65);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+}
+
+.publication-thumb .node-a {
+  top: 22px;
+  left: 18px;
+}
+
+.publication-thumb .node-b {
+  top: 22px;
+  right: 20px;
+}
+
+.publication-thumb .node-c {
+  right: 28px;
+  bottom: 22px;
+}
+
+.publication-thumb .node-d {
+  bottom: 24px;
+  left: 24px;
+}
+
+.publication-thumb .flow {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  transform-origin: left center;
+}
+
+.publication-thumb .flow-a {
+  top: 32px;
+  left: 36px;
+  width: 58px;
+}
+
+.publication-thumb .flow-b {
+  top: 54px;
+  left: 58px;
+  width: 54px;
+  transform: rotate(55deg);
+}
+
+.publication-thumb .flow-c {
+  bottom: 34px;
+  left: 42px;
+  width: 54px;
+  transform: rotate(-8deg);
+}
+
+.publication-thumb-memory {
+  background: linear-gradient(135deg, #312e81, #7c3aed);
+}
+
+.publication-thumb-agents {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
+
+.publication-thumb-sat,
+.publication-thumb-circuit,
+.publication-thumb-gate {
+  background: linear-gradient(135deg, #111827, #2563eb);
+}
+
+.publication-thumb-graph,
+.publication-thumb-matching {
+  background: linear-gradient(135deg, #064e3b, #22c55e);
+}
+
+.publication-thumb-cot,
+.publication-thumb-sequence {
+  background: linear-gradient(135deg, #7c2d12, #f97316);
+}
+
+.publication-thumb-diffusion {
+  background: linear-gradient(135deg, #581c87, #ec4899);
+}
+
+.publication-thumb-fusion {
+  background: linear-gradient(135deg, #164e63, #38bdf8);
+}
+
+.publication-card-body {
+  min-width: 0;
+}
+
+.publication-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.publication-venue,
+.publication-status {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.publication-venue {
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.publication-status {
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.16);
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.publication-authors {
+  margin: 0.5rem 0 0;
+  color: rgb(100, 116, 139);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.dark .publication-authors {
+  color: rgb(203, 213, 225);
+}
+
 @media (max-width: 640px) {
   #section-resume-biography > div:nth-of-type(2) > div > div {
     height: 24rem !important;
@@ -27,5 +230,13 @@
 
   #section-resume-biography > div:nth-of-type(2) img {
     object-position: center center;
+  }
+
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-thumb {
+    min-height: 8rem;
   }
 }
