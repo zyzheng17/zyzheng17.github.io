@@ -32,9 +32,9 @@
         background-image:
           linear-gradient(rgba(2, 6, 23, 0.22), rgba(2, 6, 23, 0.78)),
           url("assets/media/background.jpg");
-        background-position: center top;
+        background-position: center 42%;
         background-repeat: no-repeat;
-        background-size: 100% auto;
+        background-size: cover;
         background-attachment: fixed;
       }
 
@@ -93,6 +93,15 @@
         font-weight: 650;
       }
 
+      .chinese-name {
+        display: block;
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: clamp(22px, 4vw, 34px);
+        font-weight: 550;
+        letter-spacing: 0.12em;
+      }
+
       .bio {
         max-width: 760px;
         margin: 28px 0 0;
@@ -145,7 +154,7 @@
       @media (max-aspect-ratio: 3 / 2) {
         body {
           background-position: center center;
-          background-size: auto 100%;
+          background-size: cover;
         }
       }
 
@@ -163,7 +172,10 @@
         <header class="profile">
           <div class="avatar" aria-hidden="true"></div>
           <div class="intro">
-            <h1>Ziyang Zheng</h1>
+            <h1>
+              Ziyang Zheng
+              <span class="chinese-name">郑紫阳</span>
+            </h1>
             <p class="role">Ph.D. Student, Computer Science and Engineering, CUHK</p>
             <p class="bio">
               I am a Ph.D. student in the CURE Lab at The Chinese University of
