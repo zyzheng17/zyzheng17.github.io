@@ -109,39 +109,39 @@ awards:
     date: "2025-04-01"
     awarder: ICLR 2025
     summary: |
-      **Zheng Z**, Huang S, Zhong J, et al.
+      **Ziyang Zheng**, Shan Huang, Jianyuan Zhong, Zhengyuan Shi, Guohao Dai, Ningyi Xu, and Qiang Xu.
   - title: "Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism"
     date: "2025-12-01"
     awarder: NeurIPS 2025
     summary: |
-      **Zheng Z**, Li K, Shi Z, et al.
+      **Ziyang Zheng**, Kezhi Li, Zhengyuan Shi, and Qiang Xu.
   - title: "DeepGate3: Towards Scalable Circuit Representation Learning"
     date: "2024-10-01"
     awarder: ICCAD 2024
     summary: |
-      Shi Z*, **Zheng Z***, Khan S, et al.
+      Zhengyuan Shi, **Ziyang Zheng**, Sadaf Khan, Jianyuan Zhong, Min Li, and Qiang Xu.
   - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
     date: "2025-01-01"
     awarder: ASP-DAC 2025, Best Paper Nomination
     summary: |
-      Khan S, Shi Z, **Zheng Z**, et al.
+      Sadaf Khan, Zhengyuan Shi, **Ziyang Zheng**, Min Li, and Qiang Xu.
   - title: "Non-Cross Diffusion for Semantic Consistency"
     date: "2025-02-01"
     awarder: WACV 2025
     summary: |
-      **Zheng Z***, Gao R, Xu Q.
+      **Ziyang Zheng**, Ruiyuan Gao, and Qiang Xu.
   - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
     date: "2023-10-01"
     awarder: MICCAI 2023
     summary: |
-      **Zheng Z***, Yang J*, Ding X, et al.
-  - title: "TRACE: Learning to Compute on Graphs"
+      **Ziyang Zheng**, Jiewen Yang, Xinpeng Ding, Xiaowei Xu, and Xiaomeng Li.
+  - title: "TRACE: Learning to Compute on Circuit Graphs"
     date: "2026-06-01"
     awarder: DAC 2026
     summary: |
-      **Zheng Z***, Zhu J*, Zhou J, et al.
+      **Ziyang Zheng**, Jiaying Zhu, Jingyi Zhou, and Qiang Xu.
   - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
     date: "2026-04-01"
     awarder: ICLR 2026
     summary: |
-      Li Z, Zhong J, **Zheng Z**, et al.
+      Zeju Li, Jianyuan Zhong, **Ziyang Zheng**, Xiangyu Wen, Zhijian Xu, Yingying Cheng, Fan Zhang, and Qiang Xu.
