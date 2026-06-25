@@ -1,0 +1,36 @@
+{{ $block := . }}
+{{ with .wcBlock }}{{ $block = . }}{{ end }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+<section id="{{ $block.id | default "photography-gallery" }}" class="photo-gallery hbb-section">
+  <div class="photo-gallery-container">
+    {{ with $content.title }}
+      <h2 class="photo-gallery-title">{{ . }}</h2>
+    {{ end }}
+    {{ with $content.subtitle }}
+      <p class="photo-gallery-subtitle">{{ . }}</p>
+    {{ end }}
+
+    <div class="photo-gallery-grid">
+      {{ range $content.items }}
+        {{ $image := "" }}
+        {{ with .image }}{{ $image = . }}{{ end }}
+        {{ $img := "" }}
+        {{ if $image }}
+          {{ $img = resources.Get (printf "media/%s" $image) }}
+        {{ end }}
+        {{ if $img }}
+          {{ $thumb := $img.Fill "900x650 webp q86" }}
+          {{ $large := $img.Fit "2200x2200 webp q90" }}
+          <figure class="photo-gallery-item">
+            <a href="{{ $large.RelPermalink }}" target="_blank" rel="noopener">
+              <img src="{{ $thumb.RelPermalink }}" alt="{{ .title | default "Photography sample" }}" loading="lazy">
+            </a>
+            {{ with .title }}<figcaption>{{ . }}</figcaption>{{ end }}
+          </figure>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

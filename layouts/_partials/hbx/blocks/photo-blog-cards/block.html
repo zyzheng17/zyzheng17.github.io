@@ -1,0 +1,43 @@
+{{ $block := . }}
+{{ with .wcBlock }}{{ $block = . }}{{ end }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+<section id="{{ $block.id | default "photography-blog" }}" class="photo-blog-cards hbb-section">
+  <div class="photo-blog-cards-container">
+    {{ with $content.title }}
+      <h2 class="photo-blog-cards-title">{{ . }}</h2>
+    {{ end }}
+    {{ with $content.subtitle }}
+      <p class="photo-blog-cards-subtitle">{{ . }}</p>
+    {{ end }}
+
+    <div class="photo-blog-grid">
+      {{ range $content.items }}
+        {{ $image := "" }}
+        {{ with .image }}{{ $image = . }}{{ end }}
+        {{ $img := "" }}
+        {{ if $image }}
+          {{ $img = resources.Get (printf "media/%s" $image) }}
+        {{ end }}
+        <article class="photo-blog-card">
+          <div class="photo-blog-thumb{{ if $img }} photo-blog-thumb-has-image{{ end }}">
+            {{ if $img }}
+              {{ $thumb := $img.Fit "720x405 webp q86" }}
+              <a href="{{ .url }}">
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} thumbnail" loading="lazy">
+              </a>
+            {{ end }}
+          </div>
+          <div class="photo-blog-card-body">
+            {{ with .date }}<div class="photo-blog-date">{{ . }}</div>{{ end }}
+            <h3 class="photo-blog-title">
+              <a href="{{ .url }}">{{ .title }}</a>
+            </h3>
+            {{ with .summary }}<p class="photo-blog-summary">{{ . }}</p>{{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
