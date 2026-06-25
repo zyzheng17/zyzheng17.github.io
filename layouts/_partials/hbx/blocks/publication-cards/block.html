@@ -10,15 +10,26 @@
 
     <div class="publication-grid">
       {{ range $content.items }}
+        {{ $image := "" }}
+        {{ with .image }}{{ $image = . }}{{ end }}
+        {{ $img := "" }}
+        {{ if $image }}
+          {{ $img = resources.Get (printf "media/%s" $image) }}
+        {{ end }}
         <article class="publication-card">
-          <div class="publication-thumb publication-thumb-{{ .theme | default "default" }}" aria-hidden="true">
-            <span class="node node-a"></span>
-            <span class="node node-b"></span>
-            <span class="node node-c"></span>
-            <span class="node node-d"></span>
-            <span class="flow flow-a"></span>
-            <span class="flow flow-b"></span>
-            <span class="flow flow-c"></span>
+          <div class="publication-thumb publication-thumb-{{ .theme | default "default" }}{{ if $img }} publication-thumb-has-image{{ end }}" aria-hidden="true">
+            {{ if $img }}
+              {{ $thumb := $img.Fill "448x336 webp q85" }}
+              <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} framework thumbnail" loading="lazy">
+            {{ else }}
+              <span class="node node-a"></span>
+              <span class="node node-b"></span>
+              <span class="node node-c"></span>
+              <span class="node node-d"></span>
+              <span class="flow flow-a"></span>
+              <span class="flow flow-b"></span>
+              <span class="flow flow-c"></span>
+            {{ end }}
           </div>
           <div class="publication-card-body">
             <div class="publication-meta-row">

@@ -40,6 +40,7 @@ sections:
           venue: "Under review"
           authors: "**Zheng Z**, et al."
           theme: memory
+          image: papers/context-distillation.jpg
         - title: "HMARS: Hierarchical Multi-Agent Long-Context Memory Management System"
           venue: "Under review"
           authors: "Li Z, **Zheng Z**, et al."
@@ -48,38 +49,47 @@ sections:
           venue: "Under review"
           authors: "Zhu J*, **Zheng Z***, et al."
           theme: sat
+          image: papers/cascad.jpg
         - title: "TRACE: Learning to Compute on Graphs"
           venue: "DAC 2026"
           authors: "**Zheng Z***, Zhu J*, Zhou J, et al."
           theme: graph
+          image: papers/trace.jpg
         - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
           venue: "ICLR 2026"
           authors: "Li Z, Zhong J, **Zheng Z**, et al."
           theme: cot
+          image: papers/slow-thinking.jpg
         - title: "Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism"
           venue: "NeurIPS 2025"
           authors: "**Zheng Z**, Li K, Shi Z, et al."
           theme: matching
+          image: papers/functional-matching.jpg
         - title: "DeepGate4: Efficient and Effective Representation Learning for Circuit Design at Scale"
           venue: "ICLR 2025"
           authors: "**Zheng Z**, Huang S, Zhong J, et al."
           theme: circuit
+          image: papers/deepgate4.jpg
         - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
           venue: "ASP-DAC 2025, Best Paper Nomination"
           authors: "Khan S, Shi Z, **Zheng Z**, et al."
           theme: sequence
+          image: papers/deepseq2.jpg
         - title: "Non-Cross Diffusion for Semantic Consistency"
           venue: "WACV 2025"
           authors: "**Zheng Z***, Gao R, Xu Q."
           theme: diffusion
+          image: papers/non-cross-diffusion.jpg
         - title: "DeepGate3: Towards Scalable Circuit Representation Learning"
           venue: "ICCAD 2024"
           authors: "Shi Z*, **Zheng Z***, Khan S, et al."
           theme: gate
+          image: papers/deepgate3.jpg
         - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
           venue: "MICCAI 2023"
           authors: "**Zheng Z***, Yang J*, Ding X, et al."
           theme: fusion
+          image: papers/gl-fusion.jpg
   - block: languages
     content:
       title: Languages
