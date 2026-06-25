@@ -60,29 +60,71 @@
 
 .timeline-list {
   display: grid;
-  gap: 1rem;
+  position: relative;
+  gap: 1.35rem;
+  --timeline-date-width: 12rem;
+}
+
+.timeline-list::before {
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: var(--timeline-date-width);
+  width: 2px;
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    rgba(37, 99, 235, 0.12),
+    rgba(37, 99, 235, 0.42),
+    rgba(37, 99, 235, 0.12)
+  );
 }
 
 .timeline-card {
   display: grid;
-  grid-template-columns: minmax(150px, 22%) 1fr;
-  gap: 1.25rem;
-  padding: 1.15rem 1.25rem;
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  border-radius: 1.25rem;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+  position: relative;
+  grid-template-columns: var(--timeline-date-width) 1fr;
+  gap: 1.65rem;
+  padding: 0.15rem 0 0.35rem;
 }
 
-.dark .timeline-card {
-  background: rgba(15, 23, 42, 0.72);
+.timeline-card::before {
+  position: absolute;
+  top: 0.35rem;
+  left: calc(var(--timeline-date-width) - 0.42rem);
+  z-index: 1;
+  width: 0.86rem;
+  height: 0.86rem;
+  content: "";
+  border: 3px solid #2563eb;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.dark .timeline-card::before {
+  background: #0f172a;
 }
 
 .timeline-date {
+  padding-right: 1.2rem;
   color: #2563eb;
   font-size: 0.88rem;
   font-weight: 760;
   line-height: 1.4;
+  text-align: right;
+}
+
+.timeline-content {
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+}
+
+.dark .timeline-content {
+  background: rgba(15, 23, 42, 0.72);
 }
 
 .timeline-role {
@@ -363,6 +405,25 @@
 
   .timeline-card {
     grid-template-columns: 1fr;
+    gap: 0.55rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-list {
+    --timeline-date-width: 0.35rem;
+  }
+
+  .timeline-list::before {
+    left: 0.35rem;
+  }
+
+  .timeline-card::before {
+    left: -0.02rem;
+  }
+
+  .timeline-date {
+    padding-right: 0;
+    text-align: left;
   }
 
   .publication-thumb {

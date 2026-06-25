@@ -26,7 +26,24 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: timeline-cards
     content:
-      title: Research Internships
+      title: Education
+      items:
+        - role: Ph.D. Candidate, Computer Science and Engineering
+          org: The Chinese University of Hong Kong
+          date: "August 2023 -- Present"
+          summary: |
+            Advisor: Prof. Qiang Xu.
+        - role: Bachelor, Mathematical Sciences
+          org: Harbin Institute of Technology (Shenzhen)
+          date: "July 2019 -- June 2023"
+          summary: |
+            Major in Data Science within the Mathematics discipline.
+
+            - Rank: 2/64
+            - China National Scholarship, 2021
+  - block: timeline-cards
+    content:
+      title: Internships
       items:
         - role: Research Intern
           org: Noah's Ark Lab, Huawei, Hong Kong
@@ -57,23 +74,6 @@ sections:
           date: "2022 -- 2023"
           summary: |
             Research on global-local fusion and graph-driven transfer learning for echocardiogram video segmentation.
-  - block: timeline-cards
-    content:
-      title: Education
-      items:
-        - role: Ph.D. Candidate, Computer Science and Engineering
-          org: The Chinese University of Hong Kong
-          date: "August 2023 -- Present"
-          summary: |
-            Advisor: Prof. Qiang Xu.
-        - role: Bachelor, Mathematical Sciences
-          org: Harbin Institute of Technology (Shenzhen)
-          date: "July 2019 -- June 2023"
-          summary: |
-            Major in Data Science within the Mathematics discipline.
-
-            - Rank: 2/64
-            - China National Scholarship, 2021
   - block: publication-cards
     content:
       title: Selected Publications
