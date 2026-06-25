@@ -19,8 +19,10 @@
         <article class="publication-card">
           <div class="publication-thumb publication-thumb-{{ .theme | default "default" }}{{ if $img }} publication-thumb-has-image{{ end }}" aria-hidden="true">
             {{ if $img }}
-              {{ $thumb := $img.Fill "448x336 webp q85" }}
-              <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} framework thumbnail" loading="lazy">
+              {{ $thumb := $img.Fit "720x405 webp q85" }}
+              {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener" tabindex="-1">{{ end }}
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ .title }} framework thumbnail" loading="lazy">
+              {{ if .url }}</a>{{ end }}
             {{ else }}
               <span class="node node-a"></span>
               <span class="node node-b"></span>
@@ -35,7 +37,13 @@
             <div class="publication-meta-row">
               {{ with .venue }}<span class="publication-venue">{{ . }}</span>{{ end }}
             </div>
-            <h3 class="publication-title">{{ .title }}</h3>
+            <h3 class="publication-title">
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+              {{ else }}
+                {{ .title }}
+              {{ end }}
+            </h3>
             {{ with .authors }}<p class="publication-authors">{{ . | markdownify }}</p>{{ end }}
           </div>
         </article>
