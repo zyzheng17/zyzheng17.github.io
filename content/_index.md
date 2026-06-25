@@ -30,12 +30,12 @@ sections:
       items:
         - role: Ph.D. Candidate, Computer Science and Engineering
           org: The Chinese University of Hong Kong
-          date: "August 2023 -- Present"
+          date: "August 2023 – Present"
           summary: |
             Advisor: Prof. Qiang Xu.
         - role: Bachelor, Mathematical Sciences
           org: Harbin Institute of Technology (Shenzhen)
-          date: "July 2019 -- June 2023"
+          date: "July 2019 – June 2023"
           summary: |
             Major in Data Science within the Mathematics discipline.
 
@@ -47,7 +47,7 @@ sections:
       items:
         - role: Research Intern
           org: Noah's Ark Lab, Huawei, Hong Kong
-          date: "December 2025 -- Present"
+          date: "December 2025 – Present"
           summary: |
             Research on self-distillation and on-policy distillation for efficient model reasoning and deployment.
   - block: timeline-cards
@@ -56,22 +56,22 @@ sections:
       items:
         - role: LLM Compression, Self-Distillation, and On-Policy Distillation
           org: CURE Lab, CUHK
-          date: "2025 -- Present"
+          date: "2025 – Present"
           summary: |
             I work on compressing LLM reasoning processes and managing long-context memory, including step-entropy-based chain-of-thought compression, latent memory management, hierarchical multi-agent memory systems, and on-policy distillation.
         - role: Computational Graphs, Optimization, and Neural Reasoning
           org: CURE Lab, CUHK
-          date: "2024 -- Present"
+          date: "2024 – Present"
           summary: |
             I work on scalable circuit representation learning, functional matching of logic subgraphs, SAT-oriented circuit learning, and learning to compute on circuit graphs.
         - role: Diffusion Models and Semantic Consistency
           org: CURE Lab, CUHK
-          date: "2023 -- 2024"
+          date: "2023 – 2024"
           summary: |
             Research on non-cross diffusion and flow consistency for semantic consistency.
         - role: Multi-modal Video Segmentation and Transfer Learning
           org: Harbin Institute of Technology (Shenzhen)
-          date: "2022 -- 2023"
+          date: "2022 – 2023"
           summary: |
             Research on global-local fusion and graph-driven transfer learning for echocardiogram video segmentation.
   - block: publication-cards
