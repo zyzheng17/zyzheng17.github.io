@@ -23,9 +23,9 @@ sections:
       title: Photography Blog
       subtitle: Notes on astrophotography, post-processing, and visual experiments.
       items:
-        - title: "星野开源 05：更快速的渐隐星轨堆栈算法"
-          date: "June 2026"
-          summary: "A sample photography blog post about a faster iterative algorithm for fading star-trail stacking."
+        - title: "Photography Blog Sample Title"
+          date: "Coming Soon"
+          summary: "Placeholder summary for a future photography blog post. This card keeps the current layout while the final content is being prepared."
           image: photography/blog/fade-star-trails-cover.jpg
           url: /photography/star-trails-fade-stack/
 ---
