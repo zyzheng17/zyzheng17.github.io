@@ -88,6 +88,7 @@ sections:
           venue: "Under review"
           authors: "Zeju Li, **Ziyang Zheng**, et al."
           theme: agents
+          image: papers/hmars-placeholder.jpg
         - title: "CASCAD: Circuit-Aware SAT Solving via Learned Conditional Probabilities"
           venue: "Under review"
           authors: "Jiaying Zhu*, **Ziyang Zheng***, Zhengyuan Shi, Yalun Cai, and Qiang Xu."
