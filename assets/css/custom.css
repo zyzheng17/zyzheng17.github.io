@@ -167,6 +167,30 @@
   color: rgb(203, 213, 225);
 }
 
+.hb-toc {
+  order: -1 !important;
+}
+
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+  font-weight: 650;
+}
+
+.prose a:hover {
+  color: #1d4ed8;
+}
+
+.dark .prose a {
+  color: #93c5fd;
+}
+
+.dark .prose a:hover {
+  color: #bfdbfe;
+}
+
 .timeline-summary p,
 .timeline-summary ul {
   margin: 0.35rem 0 0;

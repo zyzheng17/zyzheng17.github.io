@@ -18,7 +18,7 @@ math: true
 </script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
-> Source: migrated from [`zyzheng17/TRACE_DAC26/computational_graph`](https://github.com/zyzheng17/TRACE_DAC26/tree/main/computational_graph).
+More details can be found in the [TRACE computational graph tutorial repository](https://github.com/zyzheng17/TRACE_DAC26/tree/main/computational_graph).
 
 This tutorial is a small, self-contained setting for understanding TRACE's core idea on computational graphs.
 
@@ -52,7 +52,7 @@ AIG already has a graph-like structure. We map primary inputs, AND gates, NOT/in
 
 ### Post-Mapping Netlist
 
-For a post-mapping netlist, we treat each standard-cell instance as an operation node and each net as a directed dependency between cell inputs and outputs. This keeps technology-mapped information, such as `NAND2` and `INV`, instead of reducing everything to abstract Boolean operators. For example, `Y = INV(NAND2(A, B))` is represented by PI nodes feeding a `NAND2` cell node, followed by an `INV` output node.
+For a post-mapping netlist, we treat each standard-cell instance as an operation node and each net as a directed dependency between cell inputs and outputs. This keeps technology-mapped information, such as NAND2 and INV, instead of reducing everything to abstract Boolean operators. For example, `Y = INV(NAND2(A, B))` is represented by PI nodes feeding a NAND2 cell node, followed by an INV output node.
 
 <img src="./circuit_visualizations/pm_inv_nand2.png" alt="Post-mapping netlist computational graph example" width="400">
 
@@ -121,7 +121,7 @@ Each node representation should be derived from the resolved states of its ances
 
 ## TRACE Idea In This Tutorial
 
-The minimal TRACE encoder in `model.py` follows the computation order:
+The minimal TRACE encoder in [model.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/model.py) follows the computation order:
 
 1. Initialize each node by operation type and input value.
 2. Visit nodes level by level in topological order.
@@ -144,7 +144,7 @@ Available expressions:
 - `x3_xy`: `(x^3 + x*y) mod p`
 - `x3_xy2_y`: `(x^3 + x*y^2 + y) mod p`
 
-The `x^2` and `x^3` terms are expanded into multiplication nodes, not separate power operators. See [`expr_graphs.py`](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/expr_graphs.py) for the graph templates and [`dag_visualizations/README.md`](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/dag_visualizations/README.md) for rendered examples.
+The `x^2` and `x^3` terms are expanded into multiplication nodes, not separate power operators. See [expr_graphs.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/expr_graphs.py) for the graph templates and [dag_visualizations/README.md](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/dag_visualizations/README.md) for rendered examples.
 
 ## Run The Demo
 
@@ -172,7 +172,7 @@ python demo.py --expr x2_xy_y2 --x 3 --y 5
 ```
 <img src="./dag_visualizations/x2_xy_y2.png" alt="x^2 + x*y + y^2" width="800">
 
-The `demo.py` will print the graph structure and forward flow:
+The [demo.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/demo.py) script will print the graph structure and forward flow:
 
 
 ```
@@ -241,10 +241,10 @@ We recursivly repeat above flow in level 2,3,4 until we traverse all the node.
 
 ## Files
 
-- `expr_graphs.py`: expression templates and computational graph construction.
-- `data.py`: modular arithmetic ground-truth functions.
-- `model.py`: minimal TRACE-style encoder.
-- `demo.py`: one-pass tutorial that prints graph construction, model architecture, forward flow, and input/output tensors.
+- [expr_graphs.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/expr_graphs.py): expression templates and computational graph construction.
+- [data.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/data.py): modular arithmetic ground-truth functions.
+- [model.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/model.py): minimal TRACE-style encoder.
+- [demo.py](https://github.com/zyzheng17/TRACE_DAC26/blob/main/computational_graph/demo.py): one-pass tutorial that prints graph construction, model architecture, forward flow, and input/output tensors.
 - `assets/`: figures copied from the computational-graph paper draft.
 - `circuit_visualizations/`: example DAG visualizations for AIG, post-mapping netlist, and RTL conversion.
 - `dag_visualizations/`: arithmetic-expression DAG visualizations used in this tutorial.
