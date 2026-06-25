@@ -23,10 +23,9 @@
           <div class="publication-card-body">
             <div class="publication-meta-row">
               {{ with .venue }}<span class="publication-venue">{{ . }}</span>{{ end }}
-              {{ with .status }}<span class="publication-status">{{ . }}</span>{{ end }}
             </div>
             <h3 class="publication-title">{{ .title }}</h3>
-            {{ with .authors }}<p class="publication-authors">{{ . }}</p>{{ end }}
+            {{ with .authors }}<p class="publication-authors">{{ . | markdownify }}</p>{{ end }}
           </div>
         </article>
       {{ end }}

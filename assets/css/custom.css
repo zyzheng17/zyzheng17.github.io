@@ -206,8 +206,7 @@
   margin-bottom: 0.45rem;
 }
 
-.publication-venue,
-.publication-status {
+.publication-venue {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
@@ -219,11 +218,6 @@
 .publication-venue {
   color: #1d4ed8;
   background: rgba(37, 99, 235, 0.12);
-}
-
-.publication-status {
-  color: #b45309;
-  background: rgba(245, 158, 11, 0.16);
 }
 
 .publication-title {

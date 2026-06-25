@@ -109,41 +109,39 @@ awards:
     date: "2025-04-01"
     awarder: ICLR 2025
     summary: |
-      Ziyang Zheng, Shan Huang, Jianyuan Zhong, Zhengyuan Shi, Guohao Dai,
-      Ningyi Xu, and Qiang Xu.
+      **Zheng Z**, Huang S, Zhong J, et al.
   - title: "Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism"
     date: "2025-12-01"
     awarder: NeurIPS 2025
     summary: |
-      Ziyang Zheng, Kezhi Li, Zhengyuan Shi, and Qiang Xu.
+      **Zheng Z**, Li K, Shi Z, et al.
   - title: "DeepGate3: Towards Scalable Circuit Representation Learning"
     date: "2024-10-01"
     awarder: ICCAD 2024
     summary: |
-      Zhengyuan Shi*, Ziyang Zheng*, Saad Khan, Jianyuan Zhong, Min Li, and
-      Qiang Xu.
+      Shi Z*, **Zheng Z***, Khan S, et al.
   - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
     date: "2025-01-01"
     awarder: ASP-DAC 2025, Best Paper Nomination
     summary: |
-      Saad Khan, Zhengyuan Shi, Ziyang Zheng, and collaborators.
+      Khan S, Shi Z, **Zheng Z**, et al.
   - title: "Non-Cross Diffusion for Semantic Consistency"
     date: "2025-02-01"
     awarder: WACV 2025
     summary: |
-      Ziyang Zheng, Ruiyuan Gao, and Qiang Xu.
+      **Zheng Z***, Gao R, Xu Q.
   - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
     date: "2023-10-01"
     awarder: MICCAI 2023
     summary: |
-      Ziyang Zheng*, Jiewen Yang*, Xinpeng Ding, and collaborators.
+      **Zheng Z***, Yang J*, Ding X, et al.
   - title: "TRACE: Learning to Compute on Graphs"
     date: "2026-06-01"
     awarder: DAC 2026
     summary: |
-      Ziyang Zheng*, Jiaqi Zhu*, Jiaming Zhou, and collaborators.
+      **Zheng Z***, Zhu J*, Zhou J, et al.
   - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
     date: "2026-04-01"
     awarder: ICLR 2026
     summary: |
-      Zhe Li, Jianyuan Zhong, Ziyang Zheng, and collaborators.
+      Li Z, Zhong J, **Zheng Z**, et al.

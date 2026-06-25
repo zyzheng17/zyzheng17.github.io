@@ -38,50 +38,47 @@ sections:
       items:
         - title: "Context Distillation with Latent Memory Management"
           venue: "Under review"
-          authors: "Ziyang Zheng and collaborators."
+          authors: "**Zheng Z**, et al."
           theme: memory
-          status: Under review
         - title: "HMARS: Hierarchical Multi-Agent Long-Context Memory Management System"
           venue: "Under review"
-          authors: "Zhe Li, Ziyang Zheng, and collaborators."
+          authors: "Li Z, **Zheng Z**, et al."
           theme: agents
-          status: Under review
         - title: "CASCAD: Circuit-Aware SAT Solving via Learned Conditional Probabilities"
           venue: "Under review"
-          authors: "Jiaqi Zhu*, Ziyang Zheng*, and collaborators."
+          authors: "Zhu J*, **Zheng Z***, et al."
           theme: sat
-          status: Under review
         - title: "TRACE: Learning to Compute on Graphs"
           venue: "DAC 2026"
-          authors: "Ziyang Zheng*, Jiaqi Zhu*, Jiaming Zhou, and collaborators."
+          authors: "**Zheng Z***, Zhu J*, Zhou J, et al."
           theme: graph
         - title: "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
           venue: "ICLR 2026"
-          authors: "Zhe Li, Jianyuan Zhong, Ziyang Zheng, and collaborators."
+          authors: "Li Z, Zhong J, **Zheng Z**, et al."
           theme: cot
         - title: "Functional Matching of Logic Subgraphs: Beyond Structural Isomorphism"
           venue: "NeurIPS 2025"
-          authors: "Ziyang Zheng, Kezhi Li, Zhengyuan Shi, and Qiang Xu."
+          authors: "**Zheng Z**, Li K, Shi Z, et al."
           theme: matching
         - title: "DeepGate4: Efficient and Effective Representation Learning for Circuit Design at Scale"
           venue: "ICLR 2025"
-          authors: "Ziyang Zheng, Shan Huang, Jianyuan Zhong, Zhengyuan Shi, Guohao Dai, Ningyi Xu, and Qiang Xu."
+          authors: "**Zheng Z**, Huang S, Zhong J, et al."
           theme: circuit
         - title: "DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
           venue: "ASP-DAC 2025, Best Paper Nomination"
-          authors: "Saad Khan, Zhengyuan Shi, Ziyang Zheng, and collaborators."
+          authors: "Khan S, Shi Z, **Zheng Z**, et al."
           theme: sequence
         - title: "Non-Cross Diffusion for Semantic Consistency"
           venue: "WACV 2025"
-          authors: "Ziyang Zheng, Ruiyuan Gao, and Qiang Xu."
+          authors: "**Zheng Z***, Gao R, Xu Q."
           theme: diffusion
         - title: "DeepGate3: Towards Scalable Circuit Representation Learning"
           venue: "ICCAD 2024"
-          authors: "Zhengyuan Shi*, Ziyang Zheng*, Saad Khan, Jianyuan Zhong, Min Li, and Qiang Xu."
+          authors: "Shi Z*, **Zheng Z***, Khan S, et al."
           theme: gate
         - title: "GL-Fusion: Global-Local Fusion Network for Multi-view Echocardiogram Video Segmentation"
           venue: "MICCAI 2023"
-          authors: "Ziyang Zheng*, Jiewen Yang*, Xinpeng Ding, and collaborators."
+          authors: "**Zheng Z***, Yang J*, Ding X, et al."
           theme: fusion
   - block: languages
     content:
