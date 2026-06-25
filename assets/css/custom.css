@@ -44,64 +44,68 @@
 }
 
 .timeline-cards {
-  padding: 3.5rem 1rem 1rem;
+  padding: 3.25rem 1rem 0.75rem;
+}
+
+.timeline-cards + .timeline-cards {
+  padding-top: 2.25rem;
 }
 
 .timeline-cards-container {
-  width: min(980px, 100%);
+  width: min(920px, 100%);
   margin: 0 auto;
 }
 
 .timeline-cards-title {
-  margin: 0 0 1.5rem;
-  font-size: clamp(1.85rem, 3.5vw, 2.65rem);
-  font-weight: 800;
-  letter-spacing: -0.035em;
-  text-align: center;
+  margin: 0 0 1.65rem;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 780;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
 
 .timeline-list {
   display: grid;
   position: relative;
-  gap: 1.35rem;
-  --timeline-date-width: 12rem;
+  gap: 1.15rem;
+  --timeline-date-width: 11.5rem;
 }
 
 .timeline-list::before {
   position: absolute;
-  top: 0.35rem;
-  bottom: 0.35rem;
-  left: var(--timeline-date-width);
-  width: 2px;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: calc(var(--timeline-date-width) + 0.44rem);
+  width: 1px;
   content: "";
   background: linear-gradient(
     to bottom,
-    rgba(37, 99, 235, 0.12),
-    rgba(37, 99, 235, 0.42),
-    rgba(37, 99, 235, 0.12)
+    transparent,
+    rgba(37, 99, 235, 0.38),
+    transparent
   );
 }
 
 .timeline-card {
   display: grid;
   position: relative;
-  grid-template-columns: var(--timeline-date-width) 1fr;
-  gap: 1.65rem;
-  padding: 0.15rem 0 0.35rem;
+  grid-template-columns: var(--timeline-date-width) 1rem 1fr;
+  gap: 0.85rem;
+  padding: 0.1rem 0;
 }
 
 .timeline-card::before {
   position: absolute;
-  top: 0.35rem;
-  left: calc(var(--timeline-date-width) - 0.42rem);
+  top: 1rem;
+  left: calc(var(--timeline-date-width) + 0.08rem);
   z-index: 1;
-  width: 0.86rem;
-  height: 0.86rem;
+  width: 0.72rem;
+  height: 0.72rem;
   content: "";
-  border: 3px solid #2563eb;
+  border: 2px solid #2563eb;
   border-radius: 999px;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.09);
 }
 
 .dark .timeline-card::before {
@@ -109,35 +113,41 @@
 }
 
 .timeline-date {
-  padding-right: 1.2rem;
-  color: #2563eb;
-  font-size: 0.88rem;
-  font-weight: 760;
+  align-self: start;
+  justify-self: end;
+  margin-top: 0.5rem;
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 999px;
+  padding: 0.28rem 0.72rem;
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.07);
+  font-size: 0.82rem;
+  font-weight: 720;
   line-height: 1.4;
   text-align: right;
+  white-space: nowrap;
 }
 
 .timeline-content {
-  padding: 1rem 1.15rem;
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  border-radius: 1.1rem;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+  grid-column: 3;
+  padding: 0.7rem 0 0.95rem 0.6rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  background: transparent;
 }
 
 .dark .timeline-content {
-  background: rgba(15, 23, 42, 0.72);
+  background: transparent;
 }
 
 .timeline-role {
   margin: 0;
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  font-size: clamp(1.04rem, 1.8vw, 1.22rem);
   font-weight: 760;
   line-height: 1.35;
 }
 
 .timeline-org {
-  margin-top: 0.3rem;
+  margin-top: 0.25rem;
   color: rgb(71, 85, 105);
   font-weight: 650;
 }
@@ -147,10 +157,10 @@
 }
 
 .timeline-summary {
-  margin-top: 0.65rem;
+  margin-top: 0.55rem;
   color: rgb(100, 116, 139);
-  font-size: 0.96rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.62;
 }
 
 .dark .timeline-summary {
@@ -398,26 +408,35 @@
   }
 
   .timeline-card {
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-    padding-left: 1.5rem;
+    grid-template-columns: 1.1rem 1fr;
+    gap: 0.65rem;
+    padding-left: 0;
   }
 
   .timeline-list {
-    --timeline-date-width: 0.35rem;
+    --timeline-date-width: 0;
+    gap: 1.25rem;
   }
 
   .timeline-list::before {
-    left: 0.35rem;
+    left: 0.5rem;
   }
 
   .timeline-card::before {
-    left: -0.02rem;
+    top: 0.55rem;
+    left: 0.18rem;
   }
 
   .timeline-date {
-    padding-right: 0;
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 0;
     text-align: left;
+  }
+
+  .timeline-content {
+    grid-column: 2;
+    padding: 0.15rem 0 0.8rem;
   }
 
   .publication-thumb {
