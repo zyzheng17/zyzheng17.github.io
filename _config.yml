@@ -1,0 +1,94 @@
+# Site settings
+title: Ziyang Zheng
+first_name: Ziyang
+middle_name:
+last_name: Zheng
+email: zyzheng23@cse.cuhk.edu.hk
+description: >-
+  Ziyang Zheng is a Ph.D. student at The Chinese University of Hong Kong
+  working on AI for EDA, graph representation learning, neural reasoning,
+  and LLM compression.
+footer_text:
+keywords: ziyang-zheng, machine-learning, eda, graph-learning
+lang: en
+icon: ☀️
+
+url: https://zyzheng17.github.io
+baseurl: ""
+
+# Theme settings
+repo_theme_light: default
+repo_theme_dark: dark
+
+# RSS Feed
+rss_icon: false
+
+# Layout
+navbar_fixed: true
+footer_fixed: false
+search_enabled: false
+socials_in_search: false
+
+# Open Graph / Twitter Cards
+serve_og_meta: true
+serve_link_preview: true
+enable_medium_zoom: true
+
+# Analytics
+google_analytics:
+cronos_analytics:
+
+# Collections
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+
+# Markdown and Syntax
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+
+# Includes & Excludes
+include: ["_pages"]
+exclude:
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Sass
+sass:
+  style: compressed
+
+# Social integration
+github_username: zyzheng17
+scholar_userid: MAUY0d4AAAAJ
+
+# Navigation
+nav_order:
+  - about
+  - publications
+  - photography
+
+# Scholar settings
+scholar:
+  last_name: [Zheng]
+  first_name: [Ziyang]
+
+# al-folio specific
+enable_publication_thumbnails: true

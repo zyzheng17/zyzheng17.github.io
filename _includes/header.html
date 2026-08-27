@@ -1,0 +1,10 @@
+<header class="site-header">
+  <nav>
+    <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}"{% if page.permalink == '/' %} class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}"{% if page.permalink == '/publications/' %} class="active"{% endif %}>Publications</a></li>
+      <li><a href="{{ '/photography/' | relative_url }}"{% if page.permalink == '/photography/' %} class="active"{% endif %}>Photography</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="about">
+  <div class="profile">
+    <div class="profile-image">
+      {% if page.profile.image %}
+      <img src="{{ '/assets/img/' | append: page.profile.image | relative_url }}"
+           alt="{{ site.first_name }} {{ site.last_name }}"
+           {% if page.profile.image_circular %}class="circular"{% endif %}>
+      {% endif %}
+      {% if page.profile.more_info %}
+      <div class="more-info">{{ page.profile.more_info }}</div>
+      {% endif %}
+      <div class="social-links">
+        <a href="mailto:{{ site.email }}" title="Email">📧</a>
+        <a href="https://github.com/{{ site.github_username }}" title="GitHub">GitHub</a>
+        <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar">Scholar</a>
+      </div>
+    </div>
+    <div class="profile-text">
+      <h1>{{ site.first_name }} {{ site.last_name }}</h1>
+      <p class="subtitle">{{ page.subtitle }}</p>
+      <div class="bio">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  {% if page.selected_papers %}
+  <div class="selected-publications">
+    <h2>Selected Publications</h2>
+    {% include selected_papers.html %}
+  </div>
+  {% endif %}
+</div>

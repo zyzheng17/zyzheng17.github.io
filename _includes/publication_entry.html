@@ -1,0 +1,16 @@
+<div class="pub-entry">
+  {% if include.thumbnail %}
+  <div class="pub-thumbnail">
+    <img src="{{ '/assets/img/publication_preview/' | append: include.thumbnail | relative_url }}" alt="{{ include.title }}">
+  </div>
+  {% endif %}
+  <div class="pub-content">
+    <h3 class="pub-title">
+      {% if include.arxiv %}<a href="{{ include.arxiv }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %}
+    </h3>
+    <p class="pub-authors">{{ include.authors }}</p>
+    <p class="pub-venue"><em>{{ include.venue }}</em></p>
+    {% if include.arxiv %}<a href="{{ include.arxiv }}" class="pub-link">[arXiv]</a>{% endif %}
+    {% if include.code %}<a href="{{ include.code }}" class="pub-link">[Code]</a>{% endif %}
+  </div>
+</div>

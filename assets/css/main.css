@@ -1,0 +1,249 @@
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-color: #333;
+  --link-color: #2c6fbb;
+  --muted-color: #666;
+  --border-color: #eee;
+  --bg-color: #fff;
+  --max-width: 900px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.site-header nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.site-title:hover { text-decoration: none; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--muted-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  color: var(--text-color);
+}
+
+/* About page */
+.about .profile {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-image img.circular { border-radius: 50%; }
+
+.more-info {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted-color);
+  line-height: 1.6;
+}
+
+.social-links {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.profile-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.profile-text .subtitle {
+  color: var(--muted-color);
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.bio p {
+  margin-bottom: 0.75rem;
+}
+
+/* Selected publications on about page */
+.selected-publications {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.selected-publications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Publications */
+.publications {
+  margin-bottom: 1rem;
+}
+
+.pub-entry {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  align-items: start;
+}
+
+.pub-thumbnail img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+.pub-title a { color: var(--text-color); }
+.pub-title a:hover { color: var(--link-color); }
+
+.pub-authors {
+  font-size: 0.88rem;
+  color: var(--muted-color);
+  margin-bottom: 0.2rem;
+}
+
+.pub-venue {
+  font-size: 0.88rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+/* Page */
+.page h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-description {
+  color: var(--muted-color);
+  margin-bottom: 2rem;
+}
+
+.page h2 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Photography */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.photo-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.photo-grid figure:hover img {
+  transform: scale(1.02);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted-color);
+  font-size: 0.85rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profile-image {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .more-info, .social-links { justify-content: center; }
+  .pub-entry {
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pub-entry {
+    grid-template-columns: 1fr;
+  }
+  .pub-thumbnail { display: none; }
+}
