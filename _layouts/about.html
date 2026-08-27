@@ -13,7 +13,7 @@ layout: default
       <div class="more-info">{{ page.profile.more_info }}</div>
       {% endif %}
       <div class="social-links">
-        <a href="mailto:{{ site.email }}" title="Email">📧</a>
+        <a data-user="zyzheng23" data-domain="cse.cuhk.edu.hk" title="Email">📧</a>
         <a href="https://github.com/{{ site.github_username }}" title="GitHub">GitHub</a>
         <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar">Scholar</a>
       </div>
@@ -30,7 +30,6 @@ layout: default
   {% if page.selected_papers %}
   <div class="selected-publications">
     <h2>Selected Publications</h2>
-    <p class="pub-note">First-author and co-first-author papers. For the full list, see <a href="{{ page.scholar_url }}">Google Scholar</a>.</p>
     {% include selected_papers.html %}
   </div>
   {% endif %}

@@ -18,5 +18,12 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+  document.querySelectorAll('a[data-user][data-domain]').forEach(function(el){
+    var e=el.dataset.user+'@'+el.dataset.domain;
+    el.href='mailto:'+e;
+    if(!el.textContent.trim()||el.textContent.trim()==='Email')el.textContent=e;
+  });
+  </script>
 </body>
 </html>

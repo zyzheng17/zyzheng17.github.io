@@ -11,11 +11,10 @@ profile:
   more_info: >
     <p>CURE Lab, CSE Department</p>
     <p>The Chinese University of Hong Kong</p>
-    <p>Email: zyzheng23@cse.cuhk.edu.hk</p>
+    <p>Email: <a data-user="zyzheng23" data-domain="cse.cuhk.edu.hk">Email</a></p>
 
 news: false
 selected_papers: true
-scholar_url: https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=zh-CN
 social: true
 ---
 
