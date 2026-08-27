@@ -121,6 +121,12 @@ a:hover { text-decoration: underline; }
 
 .selected-publications h2 {
   font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-note {
+  color: var(--muted-color);
+  font-size: 0.9rem;
   margin-bottom: 1.25rem;
 }
 

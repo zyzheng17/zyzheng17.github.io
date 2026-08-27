@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 permalink: /publications/
-description: A list of my publications.
+description: "First-author and co-first-author papers. For the full list, see <a href='https://scholar.google.com/citations?user=MAUY0d4AAAAJ&hl=zh-CN'>Google Scholar</a>."
 nav: true
 nav_order: 2
 ---
@@ -17,13 +17,6 @@ nav_order: 2
   venue="Under review"
   arxiv="https://arxiv.org/abs/2605.28889"
   thumbnail="context-distillation.jpg"
-%}
-
-{% include publication_entry.html
-  title="HMARS: Hierarchical Multi-Agent Long-Context Memory Management System"
-  authors="Zeju Li, <strong>Ziyang Zheng</strong>, et al."
-  venue="Under review"
-  thumbnail="hmars-placeholder.jpg"
 %}
 
 {% include publication_entry.html
@@ -46,14 +39,6 @@ nav_order: 2
   venue="DAC 2026"
   arxiv="https://arxiv.org/abs/2509.21886"
   thumbnail="trace.jpg"
-%}
-
-{% include publication_entry.html
-  title="Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy"
-  authors="Zeju Li, Jianyuan Zhong, <strong>Ziyang Zheng</strong>, Xiangyu Wen, Zhijian Xu, Yingying Cheng, Fan Zhang, and Qiang Xu."
-  venue="ICLR 2026"
-  arxiv="https://arxiv.org/abs/2508.03346"
-  thumbnail="slow-thinking.jpg"
 %}
 
 </div>
@@ -79,14 +64,6 @@ nav_order: 2
 %}
 
 {% include publication_entry.html
-  title="DeepSeq2: Enhanced Sequential Circuit Learning with Disentangled Representations"
-  authors="Sadaf Khan, Zhengyuan Shi, <strong>Ziyang Zheng</strong>, Min Li, and Qiang Xu."
-  venue="ASP-DAC 2025 (Best Paper Nomination)"
-  arxiv="https://arxiv.org/abs/2411.00530"
-  thumbnail="deepseq2.jpg"
-%}
-
-{% include publication_entry.html
   title="Non-Cross Diffusion for Semantic Consistency"
   authors="<strong>Ziyang Zheng</strong>*, Ruiyuan Gao, and Qiang Xu."
   venue="WACV 2025"
@@ -106,14 +83,6 @@ nav_order: 2
   venue="ICCAD 2024"
   arxiv="https://arxiv.org/abs/2407.11095"
   thumbnail="deepgate3.jpg"
-%}
-
-{% include publication_entry.html
-  title="Large Circuit Models: Opportunities and Challenges"
-  authors="Lei Chen, ..., <strong>Ziyang Zheng</strong>, ..., and Sunan Zou."
-  venue="Science China Information Sciences, 2024"
-  arxiv="https://arxiv.org/abs/2403.07257"
-  thumbnail="large-circuit-models.jpg"
 %}
 
 </div>
