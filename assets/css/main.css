@@ -255,6 +255,42 @@ a:hover { text-decoration: underline; }
   line-height: 1;
 }
 
+/* Experience timeline */
+.experience-list {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.exp-item {
+  position: relative;
+  padding: 0.75rem 0 0.75rem 1.25rem;
+}
+
+.exp-item::before {
+  content: '';
+  position: absolute;
+  left: -0.4rem;
+  top: 1.1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--link-color);
+}
+
+.exp-date {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted-color);
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.exp-content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border-color);

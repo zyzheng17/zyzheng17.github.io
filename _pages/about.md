@@ -24,9 +24,29 @@ I am always open to research collaboration and discussion. Feel free to reach ou
 
 ## Experience
 
-| Period | Role |
-|--------|------|
-| 2026.08 – Present | Research Intern, JD.com, Intelligent Retail |
-| 2025.12 – 2026.07 | Research Intern, Noah's Ark Lab, Huawei |
-| 2023.08 – Present | Ph.D. Student, The Chinese University of Hong Kong |
-| 2019.07 – 2023.06 | B.Sc. in Data Science, Harbin Institute of Technology (Shenzhen) |
+<div class="experience-list">
+  <div class="exp-item">
+    <span class="exp-date">2026.08 – Present</span>
+    <div class="exp-content">
+      <strong>Research Intern</strong><br>JD.com, Intelligent Retail
+    </div>
+  </div>
+  <div class="exp-item">
+    <span class="exp-date">2025.12 – 2026.07</span>
+    <div class="exp-content">
+      <strong>Research Intern</strong><br>Noah's Ark Lab, Huawei
+    </div>
+  </div>
+  <div class="exp-item">
+    <span class="exp-date">2023.08 – Present</span>
+    <div class="exp-content">
+      <strong>Ph.D. Student</strong><br>The Chinese University of Hong Kong
+    </div>
+  </div>
+  <div class="exp-item">
+    <span class="exp-date">2019.07 – 2023.06</span>
+    <div class="exp-content">
+      <strong>B.Sc. in Data Science</strong><br>Harbin Institute of Technology (Shenzhen)
+    </div>
+  </div>
+</div>
