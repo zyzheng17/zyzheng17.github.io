@@ -28,7 +28,12 @@ layout: default
   </div>
 
   {% if page.selected_papers %}
-  <div class="selected-publications">
+  <div class="section-block">
+    <h2>Experience</h2>
+    {% include experience.html %}
+  </div>
+
+  <div class="section-block">
     <h2>Selected Publications</h2>
     {% include selected_papers.html %}
   </div>

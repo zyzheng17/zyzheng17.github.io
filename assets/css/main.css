@@ -112,18 +112,6 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.75rem;
 }
 
-/* Selected publications on about page */
-.selected-publications {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
-}
-
-.selected-publications h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
-}
-
 /* Publications */
 .publications {
   margin-bottom: 1rem;
@@ -255,40 +243,66 @@ a:hover { text-decoration: underline; }
   line-height: 1;
 }
 
-/* Experience timeline */
-.experience-list {
-  position: relative;
-  padding-left: 1rem;
-  border-left: 2px solid var(--border-color);
+/* Section blocks */
+.section-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
 }
 
-.exp-item {
-  position: relative;
-  padding: 0.75rem 0 0.75rem 1.25rem;
+.section-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-.exp-item::before {
-  content: '';
-  position: absolute;
-  left: -0.4rem;
-  top: 1.1rem;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  background: var(--link-color);
+/* Experience grid */
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.exp-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.exp-card:hover {
+  border-color: var(--link-color);
+}
+
+.exp-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.exp-role {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.exp-org {
+  font-size: 0.88rem;
+  color: var(--muted-color);
+  margin-top: 0.15rem;
 }
 
 .exp-date {
-  display: block;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--muted-color);
-  font-weight: 500;
-  margin-bottom: 0.2rem;
+  margin-top: 0.3rem;
 }
 
-.exp-content {
-  font-size: 0.95rem;
-  line-height: 1.5;
+@media (max-width: 640px) {
+  .exp-grid { grid-template-columns: 1fr; }
 }
 
 /* Footer */
