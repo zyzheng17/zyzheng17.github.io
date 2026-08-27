@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 
-<div class="photo-grid">
+<div class="photo-masonry">
   <figure>
     <img src="{{ '/assets/img/photography/starry-sky.jpg' | relative_url }}" alt="Starry Sky" loading="lazy">
   </figure>

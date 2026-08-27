@@ -7,7 +7,7 @@ nav: true
 nav_order: 2
 ---
 
-## Preprints
+## 2026
 
 <div class="publications">
 
@@ -20,9 +20,10 @@ nav_order: 2
 %}
 
 {% include publication_entry.html
-  title="HMARS: Hierarchical Multi-Agent Long-Context Memory Management System"
-  authors="Zeju Li, <strong>Ziyang Zheng</strong>, et al."
+  title="HMARS: A Hierarchical Multi-Agent Memory System for Long-Context Reasoning"
+  authors="Zeju Li, <strong>Ziyang Zheng</strong>, Yizhou Zhou, and Qiang Xu."
   venue="Under review"
+  arxiv="https://arxiv.org/abs/2606.28349"
   thumbnail="hmars.jpg"
 %}
 
@@ -33,12 +34,6 @@ nav_order: 2
   arxiv="https://arxiv.org/abs/2508.04235"
   thumbnail="cascad.jpg"
 %}
-
-</div>
-
-## 2026
-
-<div class="publications">
 
 {% include publication_entry.html
   title="TRACE: Learning to Compute on Circuit Graphs"
