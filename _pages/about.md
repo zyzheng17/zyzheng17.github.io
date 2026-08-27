@@ -20,6 +20,12 @@ social: true
 
 I am a Ph.D. student in the [CURE Lab](https://www.cse.cuhk.edu.hk/) at The Chinese University of Hong Kong, advised by [Prof. Qiang Xu](https://cure-lab.github.io/). My research interests include computational graphs, neural reasoning, diffusion models, self-distillation, and on-policy distillation.
 
-Before joining CUHK, I received my bachelor's degree in Data Science from [Harbin Institute of Technology (Shenzhen)](http://en.hitsz.edu.cn/).
-
 I am always open to research collaboration and discussion. Feel free to reach out!
+
+## Experience
+
+| Period | Role |
+|--------|------|
+| 2025.12 – Present | Research Intern, Noah's Ark Lab, Huawei |
+| 2023.08 – Present | Ph.D. Student, The Chinese University of Hong Kong |
+| 2019.07 – 2023.06 | B.Sc. in Data Science, Harbin Institute of Technology (Shenzhen) |
