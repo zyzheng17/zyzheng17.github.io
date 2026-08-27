@@ -26,6 +26,7 @@ I am always open to research collaboration and discussion. Feel free to reach ou
 
 | Period | Role |
 |--------|------|
-| 2025.12 – Present | Research Intern, Noah's Ark Lab, Huawei |
+| 2026.08 – Present | Research Intern, JD.com, Intelligent Retail |
+| 2025.12 – 2026.07 | Research Intern, Noah's Ark Lab, Huawei |
 | 2023.08 – Present | Ph.D. Student, The Chinese University of Hong Kong |
 | 2019.07 – 2023.06 | B.Sc. in Data Science, Harbin Institute of Technology (Shenzhen) |
