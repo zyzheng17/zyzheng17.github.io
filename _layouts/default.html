@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if page.dark_theme %} data-theme="dark"{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,9 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% if page.dark_theme %}<script>
+  (function(){try{if(localStorage.getItem('photo-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}})();
+  </script>{% endif %}
   {% seo %}
 </head>
 <body>
@@ -22,18 +25,130 @@
     if(!el.textContent.trim()||el.textContent.trim()==='Email')el.textContent=e;
   });
   (function(){
-    var lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img');
+    var lb=document.getElementById('lightbox'),img=document.getElementById('lightbox-img'),
+        cap=document.getElementById('lightbox-caption');
     if(!lb)return;
-    document.querySelectorAll('.lightbox-trigger').forEach(function(a){
-      a.addEventListener('click',function(e){
-        e.preventDefault();
-        img.src=this.href;
-        img.alt=this.querySelector('img').alt;
-        lb.classList.add('active');
+    var links=[].slice.call(document.querySelectorAll('.lightbox-trigger')),i=-1;
+    function show(n){
+      if(!links.length)return;
+      i=(n+links.length)%links.length;
+      var a=links[i],t=a.querySelector('img');
+      img.src=a.getAttribute('href');
+      img.alt=t?t.alt:'';
+      if(cap)cap.textContent=a.getAttribute('data-caption')||img.alt;
+      lb.classList.add('active');
+    }
+    links.forEach(function(a,k){
+      a.addEventListener('click',function(e){e.preventDefault();show(k);});
+    });
+    var prev=lb.querySelector('.lightbox-prev'),next=lb.querySelector('.lightbox-next'),
+        closeBtn=lb.querySelector('.lightbox-close');
+    function close(){lb.classList.remove('active');}
+    if(prev)prev.addEventListener('click',function(e){e.stopPropagation();show(i-1);});
+    if(next)next.addEventListener('click',function(e){e.stopPropagation();show(i+1);});
+    if(closeBtn)closeBtn.addEventListener('click',function(e){e.stopPropagation();close();});
+    lb.addEventListener('click',function(e){
+      if(e.target===img||e.target===prev||e.target===next||e.target===closeBtn)return;
+      close();
+    });
+    document.addEventListener('keydown',function(e){
+      if(!lb.classList.contains('active'))return;
+      if(e.key==='Escape')close();
+      else if(e.key==='ArrowLeft')show(i-1);
+      else if(e.key==='ArrowRight')show(i+1);
+    });
+    var x0=null;
+    lb.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;},{passive:true});
+    lb.addEventListener('touchend',function(e){
+      if(x0===null)return;
+      var dx=e.changedTouches[0].clientX-x0;
+      if(Math.abs(dx)>50)show(i+(dx<0?1:-1));
+      x0=null;
+    },{passive:true});
+  })();
+  (function(){
+    var galleries=[].slice.call(document.querySelectorAll('.photo-masonry'));
+    if(!galleries.length)return;
+    // 深/浅色切换（按钮在页面结构里，这里只负责行为和记录偏好）
+    var tbtn=document.getElementById('themeToggle');
+    if(tbtn){
+      var isLight=function(){return document.documentElement.getAttribute('data-theme')==='light';};
+      var syncBtn=function(){tbtn.textContent=isLight()?'深色':'浅色';};
+      tbtn.addEventListener('click',function(){
+        var next=isLight()?'dark':'light';
+        document.documentElement.setAttribute('data-theme',next);
+        try{localStorage.setItem('photo-theme',next);}catch(err){}
+        syncBtn();
+      });
+      syncBtn();
+    }
+    var GAP=6;
+    function ratio(f){
+      var im=f.querySelector('img');
+      if(!im)return 1.5;
+      var w=parseFloat(im.getAttribute('width')),h=parseFloat(im.getAttribute('height'));
+      if(w>0&&h>0)return w/h;
+      if(im.naturalWidth&&im.naturalHeight)return im.naturalWidth/im.naturalHeight;
+      return 1.5;
+    }
+    function layout(g){
+      var figs=[].slice.call(g.children).filter(function(el){return el.tagName==='FIGURE';});
+      var W=g.clientWidth;
+      if(!figs.length||W<80)return;
+      var target=Math.max(150,Math.min(260,W/4.6));   // 目标行高
+      var minW=Math.max(130,W*0.17);                  // 单张最小宽度，避免竖图被挤成细条
+      var ars=figs.map(function(f){return ratio(f);});
+      var feat=figs.map(function(f){return f.classList.contains('featured');});
+      var n=figs.length,i=0,rows=[];
+      while(i<n){
+        // 放大展示的那张从新的一行开始，这一行按更大的目标行高排，所以同行张数更少、每张更大
+        var rowTarget=feat[i]?target*1.6:target;
+        var row=[i],sum=ars[i],j=i+1;
+        while(true){
+          if((W-GAP*(row.length-1))/sum<=rowTarget)break;  // 这一行已经够满
+          if(j>=n)break;
+          if(feat[j])break;                             // 下一张要放大 → 换行
+          var cSum=sum+ars[j],hC=(W-GAP*row.length)/cSum;
+          if(hC<rowTarget)break;                         // 再加一张就低于目标行高了
+          var m=Math.min.apply(null,row.concat([j]).map(function(k){return ars[k];}));
+          if(hC*m<minW)break;                            // 会让最窄的一张太细 → 宁可换行
+          row.push(j);sum=cSum;j++;
+        }
+        rows.push({cols:row,last:(j>=n),feat:feat[i]});
+        i=j;
+      }
+      rows.forEach(function(r){
+        var sum=0;
+        r.cols.forEach(function(x){sum+=ars[x];});
+        var hFill=(W-GAP*(r.cols.length-1))/sum;
+        // 只有"单张独占一行"时才限制高度，其余一律精确铺满，避免留白
+        var h=(r.last&&r.cols.length===1)
+              ?Math.min(hFill,target*(rows.length===1?2.4:1.9))
+              :hFill;
+        r.cols.forEach(function(x){
+          figs[x].style.width=Math.floor(ars[x]*h)+'px';
+          figs[x].style.height=Math.round(h)+'px';
+        });
+      });
+      g.classList.add('is-justified');
+    }
+    function all(){galleries.forEach(layout);}
+    var pending=null;
+    function schedule(){
+      if(pending)return;
+      pending=setTimeout(function(){pending=null;all();},200);
+    }
+    // 懒加载的图在滚到眼前前拿不到原始像素，加载完再重排一次
+    galleries.forEach(function(g){
+      [].slice.call(g.querySelectorAll('img')).forEach(function(im){
+        if(!im.complete)im.addEventListener('load',schedule,{once:true});
       });
     });
-    lb.addEventListener('click',function(){lb.classList.remove('active');});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('active');});
+    all();
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',all);
+    window.addEventListener('load',all);
+    var t=null;
+    window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(all,150);});
   })();
   </script>
 </body>

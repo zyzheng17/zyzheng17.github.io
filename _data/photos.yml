@@ -1,16 +1,879 @@
-- file: starry-sky.jpg
-  alt: Starry Sky
-- file: mountain-night.jpg
-  alt: Mountain Night
-- file: vertical-night.jpg
-  alt: Vertical Night
-- file: city-light.jpg
-  alt: City Light
-- file: fade-star-trails-cover.jpg
-  alt: Star Trails
-- file: fade-star-trails-01.jpg
-  alt: Star Trails 1
-- file: fade-star-trails-02.jpg
-  alt: Star Trails 2
-- file: fade-star-trails-03.jpg
-  alt: Star Trails 3
+- year: "2026"
+  shoots:
+    - date: "2026.07.04"
+      place: "香港雨夜扫街"
+      photos:
+        - file: "s042/p01.webp"
+          thumb: "s042/p01t.webp"
+          alt: "香港雨夜扫街 1"
+          w: 426
+          h: 640
+        - file: "s042/p02.webp"
+          thumb: "s042/p02t.webp"
+          alt: "香港雨夜扫街 2"
+          w: 426
+          h: 640
+        - file: "s042/p03.webp"
+          thumb: "s042/p03t.webp"
+          alt: "香港雨夜扫街 3"
+          w: 426
+          h: 640
+    - date: "2026.06.22"
+      place: "新疆大海道&胡杨林"
+      photos:
+        - file: "s041/p01.webp"
+          thumb: "s041/p01t.webp"
+          alt: "新疆大海道&胡杨林 1"
+          w: 640
+          h: 426
+        - file: "s041/p02.webp"
+          thumb: "s041/p02t.webp"
+          alt: "新疆大海道&胡杨林 2"
+          w: 640
+          h: 399
+        - file: "s041/p03.webp"
+          thumb: "s041/p03t.webp"
+          alt: "新疆大海道&胡杨林 3"
+          w: 426
+          h: 640
+          feature: true
+        - file: "s041/p04.webp"
+          thumb: "s041/p04t.webp"
+          alt: "新疆大海道&胡杨林 4"
+          w: 640
+          h: 426
+- year: "2025"
+  shoots:
+    - date: "2025.09.03"
+      place: "尼泊尔ABC徒步"
+      photos:
+        - file: "s040/p01.webp"
+          thumb: "s040/p01t.webp"
+          alt: "尼泊尔ABC徒步 1"
+          w: 640
+          h: 480
+        - file: "s040/p02.webp"
+          thumb: "s040/p02t.webp"
+          alt: "尼泊尔ABC徒步 2"
+          w: 640
+          h: 426
+        - file: "s040/p03.webp"
+          thumb: "s040/p03t.webp"
+          alt: "尼泊尔ABC徒步 3"
+          w: 640
+          h: 188
+        - file: "s040/p04.webp"
+          thumb: "s040/p04t.webp"
+          alt: "尼泊尔ABC徒步 4"
+          w: 640
+          h: 360
+        - file: "s040/p05.webp"
+          thumb: "s040/p05t.webp"
+          alt: "尼泊尔ABC徒步 5"
+          w: 640
+          h: 426
+    - date: "2025.06.28"
+      place: "雕塑公园"
+      photos:
+        - file: "s039/p01.webp"
+          thumb: "s039/p01t.webp"
+          alt: "雕塑公园 1"
+          w: 640
+          h: 640
+        - file: "s039/p02.webp"
+          thumb: "s039/p02t.webp"
+          alt: "雕塑公园 2"
+          w: 640
+          h: 640
+        - file: "s039/p03.webp"
+          thumb: "s039/p03t.webp"
+          alt: "雕塑公园 3"
+          w: 640
+          h: 272
+    - date: "2025.06.27"
+      place: "巴丹吉林天蝎座"
+      photos:
+        - file: "s038/p01.webp"
+          thumb: "s038/p01t.webp"
+          alt: "巴丹吉林天蝎座 1"
+          w: 640
+          h: 640
+    - date: "2025.06.23"
+      place: "俄博梁"
+      photos:
+        - file: "s037/p01.webp"
+          thumb: "s037/p01t.webp"
+          alt: "俄博梁 1"
+          w: 640
+          h: 272
+        - file: "s037/p02.webp"
+          thumb: "s037/p02t.webp"
+          alt: "俄博梁 2"
+          w: 640
+          h: 340
+        - file: "s037/p03.webp"
+          thumb: "s037/p03t.webp"
+          alt: "俄博梁 3"
+          w: 640
+          h: 427
+- year: "2024"
+  shoots:
+    - date: "2024.12.26"
+      place: "南京保利大剧院"
+      photos:
+        - file: "s036/p01.webp"
+          thumb: "s036/p01t.webp"
+          alt: "南京保利大剧院 1"
+          w: 640
+          h: 426
+    - date: "2024.10.23"
+      place: "宇宙魔方银拱"
+      photos:
+        - file: "s035/p01.webp"
+          thumb: "s035/p01t.webp"
+          alt: "宇宙魔方银拱 1"
+          w: 640
+          h: 272
+    - date: "2024.10.22"
+      place: "大柴旦木盐湖银河彗星"
+      photos:
+        - file: "s034/p01.webp"
+          thumb: "s034/p01t.webp"
+          alt: "大柴旦木盐湖银河彗星 1"
+          w: 640
+          h: 426
+        - file: "s034/p02.webp"
+          thumb: "s034/p02t.webp"
+          alt: "大柴旦木盐湖银河彗星 2"
+          w: 640
+          h: 426
+        - file: "s034/p03.webp"
+          thumb: "s034/p03t.webp"
+          alt: "大柴旦木盐湖银河彗星 3"
+          w: 640
+          h: 426
+    - date: "2024.10.21"
+      place: "俄博梁银河彗星"
+      photos:
+        - file: "s033/p01.webp"
+          thumb: "s033/p01t.webp"
+          alt: "俄博梁银河彗星 1"
+          w: 640
+          h: 426
+    - date: "2024.07.19"
+      place: "紫金山日落"
+      photos:
+        - file: "s032/p01.webp"
+          thumb: "s032/p01t.webp"
+          alt: "紫金山日落 1"
+          w: 640
+          h: 274
+    - date: "2024.06.10"
+      place: "紫金山"
+      photos:
+        - file: "s031/p01.webp"
+          thumb: "s031/p01t.webp"
+          alt: "紫金山 1"
+          w: 640
+          h: 480
+    - date: "2024.05.28"
+      place: "中山植物园"
+      photos:
+        - file: "s030/p01.webp"
+          thumb: "s030/p01t.webp"
+          alt: "中山植物园 1"
+          w: 640
+          h: 427
+        - file: "s030/p02.webp"
+          thumb: "s030/p02t.webp"
+          alt: "中山植物园 2"
+          w: 640
+          h: 427
+        - file: "s030/p03.webp"
+          thumb: "s030/p03t.webp"
+          alt: "中山植物园 3"
+          w: 640
+          h: 512
+        - file: "s030/p04.webp"
+          thumb: "s030/p04t.webp"
+          alt: "中山植物园 4"
+          w: 640
+          h: 427
+        - file: "s030/p05.webp"
+          thumb: "s030/p05t.webp"
+          alt: "中山植物园 5"
+          w: 640
+          h: 427
+        - file: "s030/p06.webp"
+          thumb: "s030/p06t.webp"
+          alt: "中山植物园 6"
+          w: 640
+          h: 427
+        - file: "s030/p07.webp"
+          thumb: "s030/p07t.webp"
+          alt: "中山植物园 7"
+          w: 640
+          h: 427
+        - file: "s030/p08.webp"
+          thumb: "s030/p08t.webp"
+          alt: "中山植物园 8"
+          w: 640
+          h: 427
+        - file: "s030/p09.webp"
+          thumb: "s030/p09t.webp"
+          alt: "中山植物园 9"
+          w: 640
+          h: 427
+        - file: "s030/p10.webp"
+          thumb: "s030/p10t.webp"
+          alt: "中山植物园 10"
+          w: 640
+          h: 640
+        - file: "s030/p11.webp"
+          thumb: "s030/p11t.webp"
+          alt: "中山植物园 11"
+          w: 512
+          h: 640
+        - file: "s030/p12.webp"
+          thumb: "s030/p12t.webp"
+          alt: "中山植物园 12"
+          w: 640
+          h: 427
+        - file: "s030/p13.webp"
+          thumb: "s030/p13t.webp"
+          alt: "中山植物园 13"
+          w: 640
+          h: 427
+        - file: "s030/p14.webp"
+          thumb: "s030/p14t.webp"
+          alt: "中山植物园 14"
+          w: 640
+          h: 427
+        - file: "s030/p15.webp"
+          thumb: "s030/p15t.webp"
+          alt: "中山植物园 15"
+          w: 640
+          h: 427
+        - file: "s030/p16.webp"
+          thumb: "s030/p16t.webp"
+          alt: "中山植物园 16"
+          w: 640
+          h: 427
+    - date: "2024.03.31"
+      place: "千岛湖"
+      photos:
+        - file: "s029/p01.webp"
+          thumb: "s029/p01t.webp"
+          alt: "千岛湖 1"
+          w: 426
+          h: 640
+        - file: "s029/p02.webp"
+          thumb: "s029/p02t.webp"
+          alt: "千岛湖 2"
+          w: 640
+          h: 426
+        - file: "s029/p03.webp"
+          thumb: "s029/p03t.webp"
+          alt: "千岛湖 3"
+          w: 512
+          h: 640
+        - file: "s029/p04.webp"
+          thumb: "s029/p04t.webp"
+          alt: "千岛湖 4"
+          w: 640
+          h: 426
+        - file: "s029/p05.webp"
+          thumb: "s029/p05t.webp"
+          alt: "千岛湖 5"
+          w: 640
+          h: 427
+        - file: "s029/p06.webp"
+          thumb: "s029/p06t.webp"
+          alt: "千岛湖 6"
+          w: 640
+          h: 427
+        - file: "s029/p07.webp"
+          thumb: "s029/p07t.webp"
+          alt: "千岛湖 7"
+          w: 640
+          h: 427
+    - date: "2024.01.01"
+      place: "昂坪跨年"
+      photos:
+        - file: "s028/p01.webp"
+          thumb: "s028/p01t.webp"
+          alt: "昂坪跨年 1"
+          w: 426
+          h: 640
+        - file: "s028/p02.webp"
+          thumb: "s028/p02t.webp"
+          alt: "昂坪跨年 2"
+          w: 426
+          h: 640
+        - file: "s028/p03.webp"
+          thumb: "s028/p03t.webp"
+          alt: "昂坪跨年 3"
+          w: 640
+          h: 426
+        - file: "s028/p04.webp"
+          thumb: "s028/p04t.webp"
+          alt: "昂坪跨年 4"
+          w: 640
+          h: 427
+        - file: "s028/p05.webp"
+          thumb: "s028/p05t.webp"
+          alt: "昂坪跨年 5"
+          w: 640
+          h: 427
+- year: "2023"
+  shoots:
+    - date: "2023.12.24"
+      place: "圣诞节"
+      photos:
+        - file: "s027/p01.webp"
+          thumb: "s027/p01t.webp"
+          alt: "圣诞节 1"
+          w: 426
+          h: 640
+        - file: "s027/p02.webp"
+          thumb: "s027/p02t.webp"
+          alt: "圣诞节 2"
+          w: 640
+          h: 426
+        - file: "s027/p03.webp"
+          thumb: "s027/p03t.webp"
+          alt: "圣诞节 3"
+          w: 640
+          h: 426
+        - file: "s027/p04.webp"
+          thumb: "s027/p04t.webp"
+          alt: "圣诞节 4"
+          w: 426
+          h: 640
+        - file: "s027/p05.webp"
+          thumb: "s027/p05t.webp"
+          alt: "圣诞节 5"
+          w: 427
+          h: 640
+        - file: "s027/p06.webp"
+          thumb: "s027/p06t.webp"
+          alt: "圣诞节 6"
+          w: 640
+          h: 427
+        - file: "s027/p07.webp"
+          thumb: "s027/p07t.webp"
+          alt: "圣诞节 7"
+          w: 427
+          h: 640
+        - file: "s027/p08.webp"
+          thumb: "s027/p08t.webp"
+          alt: "圣诞节 8"
+          w: 427
+          h: 640
+        - file: "s027/p09.webp"
+          thumb: "s027/p09t.webp"
+          alt: "圣诞节 9"
+          w: 640
+          h: 640
+    - date: "2023.10.30"
+      place: "昂坪徒步"
+      photos:
+        - file: "s026/p01.webp"
+          thumb: "s026/p01t.webp"
+          alt: "昂坪徒步 1"
+          w: 640
+          h: 426
+        - file: "s026/p02.webp"
+          thumb: "s026/p02t.webp"
+          alt: "昂坪徒步 2"
+          w: 426
+          h: 640
+        - file: "s026/p03.webp"
+          thumb: "s026/p03t.webp"
+          alt: "昂坪徒步 3"
+          w: 640
+          h: 426
+        - file: "s026/p04.webp"
+          thumb: "s026/p04t.webp"
+          alt: "昂坪徒步 4"
+          w: 640
+          h: 426
+        - file: "s026/p05.webp"
+          thumb: "s026/p05t.webp"
+          alt: "昂坪徒步 5"
+          w: 426
+          h: 640
+        - file: "s026/p06.webp"
+          thumb: "s026/p06t.webp"
+          alt: "昂坪徒步 6"
+          w: 426
+          h: 640
+        - file: "s026/p07.webp"
+          thumb: "s026/p07t.webp"
+          alt: "昂坪徒步 7"
+          w: 426
+          h: 640
+    - date: "2023.10.06"
+      place: "旺角艺术中心"
+      photos:
+        - file: "s025/p01.webp"
+          thumb: "s025/p01t.webp"
+          alt: "旺角艺术中心 1"
+          w: 427
+          h: 640
+    - date: "2023.10.02"
+      place: "上水废弃轿车"
+      photos:
+        - file: "s024/p01.webp"
+          thumb: "s024/p01t.webp"
+          alt: "上水废弃轿车 1"
+          w: 426
+          h: 640
+        - file: "s024/p02.webp"
+          thumb: "s024/p02t.webp"
+          alt: "上水废弃轿车 2"
+          w: 640
+          h: 426
+        - file: "s024/p03.webp"
+          thumb: "s024/p03t.webp"
+          alt: "上水废弃轿车 3"
+          w: 640
+          h: 360
+        - file: "s024/p04.webp"
+          thumb: "s024/p04t.webp"
+          alt: "上水废弃轿车 4"
+          w: 640
+          h: 426
+        - file: "s024/p05.webp"
+          thumb: "s024/p05t.webp"
+          alt: "上水废弃轿车 5"
+          w: 640
+          h: 426
+        - file: "s024/p06.webp"
+          thumb: "s024/p06t.webp"
+          alt: "上水废弃轿车 6"
+          w: 640
+          h: 426
+        - file: "s024/p07.webp"
+          thumb: "s024/p07t.webp"
+          alt: "上水废弃轿车 7"
+          w: 640
+          h: 426
+        - file: "s024/p08.webp"
+          thumb: "s024/p08t.webp"
+          alt: "上水废弃轿车 8"
+          w: 426
+          h: 640
+        - file: "s024/p09.webp"
+          thumb: "s024/p09t.webp"
+          alt: "上水废弃轿车 9"
+          w: 426
+          h: 640
+        - file: "s024/p10.webp"
+          thumb: "s024/p10t.webp"
+          alt: "上水废弃轿车 10"
+          w: 640
+          h: 426
+        - file: "s024/p11.webp"
+          thumb: "s024/p11t.webp"
+          alt: "上水废弃轿车 11"
+          w: 640
+          h: 426
+    - date: "2023.07.26"
+      place: "巴音布鲁克"
+      photos:
+        - file: "s023/p01.webp"
+          thumb: "s023/p01t.webp"
+          alt: "巴音布鲁克 1"
+          w: 640
+          h: 426
+        - file: "s023/p02.webp"
+          thumb: "s023/p02t.webp"
+          alt: "巴音布鲁克 2"
+          w: 640
+          h: 360
+        - file: "s023/p03.webp"
+          thumb: "s023/p03t.webp"
+          alt: "巴音布鲁克 3"
+          w: 640
+          h: 480
+        - file: "s023/p04.webp"
+          thumb: "s023/p04t.webp"
+          alt: "巴音布鲁克 4"
+          w: 640
+          h: 480
+        - file: "s023/p05.webp"
+          thumb: "s023/p05t.webp"
+          alt: "巴音布鲁克 5"
+          w: 640
+          h: 480
+    - date: "2023.07.25"
+      place: "那拉提雪山"
+      photos:
+        - file: "s022/p01.webp"
+          thumb: "s022/p01t.webp"
+          alt: "那拉提雪山 1"
+          w: 427
+          h: 640
+    - date: "2023.07.22"
+      place: "果子沟大桥星轨与银拱"
+      photos:
+        - file: "s021/p01.webp"
+          thumb: "s021/p01t.webp"
+          alt: "果子沟大桥星轨与银拱 1"
+          w: 640
+          h: 426
+        - file: "s021/p02.webp"
+          thumb: "s021/p02t.webp"
+          alt: "果子沟大桥星轨与银拱 2"
+          w: 446
+          h: 640
+    - date: "2023.07.21"
+      place: "无人机安集海大峡谷与赛里木湖日出"
+      photos:
+        - file: "s020/p01.webp"
+          thumb: "s020/p01t.webp"
+          alt: "无人机安集海大峡谷与赛里木湖日出 1"
+          w: 480
+          h: 640
+        - file: "s020/p02.webp"
+          thumb: "s020/p02t.webp"
+          alt: "无人机安集海大峡谷与赛里木湖日出 2"
+          w: 640
+          h: 213
+        - file: "s020/p03.webp"
+          thumb: "s020/p03t.webp"
+          alt: "无人机安集海大峡谷与赛里木湖日出 3"
+          w: 640
+          h: 426
+        - file: "s020/p04.webp"
+          thumb: "s020/p04t.webp"
+          alt: "无人机安集海大峡谷与赛里木湖日出 4"
+          w: 640
+          h: 426
+    - date: "2023.07.20"
+      place: "赛里木湖星空露营"
+      photos:
+        - file: "s019/p01.webp"
+          thumb: "s019/p01t.webp"
+          alt: "赛里木湖星空露营 1"
+          w: 426
+          h: 640
+    - date: "2023.05.27"
+      place: "阳朔大面山银拱"
+      photos:
+        - file: "s018/p01.webp"
+          thumb: "s018/p01t.webp"
+          alt: "阳朔大面山银拱 1"
+          w: 640
+          h: 640
+        - file: "s018/p02.webp"
+          thumb: "s018/p02t.webp"
+          alt: "阳朔大面山银拱 2"
+          w: 640
+          h: 480
+        - file: "s018/p03.webp"
+          thumb: "s018/p03t.webp"
+          alt: "阳朔大面山银拱 3"
+          w: 640
+          h: 426
+    - date: "2023.05.21"
+      place: "北湾鹭港霞光"
+      photos:
+        - file: "s017/p01.webp"
+          thumb: "s017/p01t.webp"
+          alt: "北湾鹭港霞光 1"
+          w: 640
+          h: 425
+    - date: "2023.05.07"
+      place: "北湾鹭港世纪晚霞"
+      photos:
+        - file: "s016/p01.webp"
+          thumb: "s016/p01t.webp"
+          alt: "北湾鹭港世纪晚霞 1"
+          w: 640
+          h: 426
+        - file: "s016/p02.webp"
+          thumb: "s016/p02t.webp"
+          alt: "北湾鹭港世纪晚霞 2"
+          w: 640
+          h: 426
+    - date: "2023.04.29"
+      place: "四姑娘大峰"
+      photos:
+        - file: "s015/p01.webp"
+          thumb: "s015/p01t.webp"
+          alt: "四姑娘大峰 1"
+          w: 640
+          h: 427
+        - file: "s015/p02.webp"
+          thumb: "s015/p02t.webp"
+          alt: "四姑娘大峰 2"
+          w: 640
+          h: 427
+        - file: "s015/p03.webp"
+          thumb: "s015/p03t.webp"
+          alt: "四姑娘大峰 3"
+          w: 640
+          h: 427
+        - file: "s015/p04.webp"
+          thumb: "s015/p04t.webp"
+          alt: "四姑娘大峰 4"
+          w: 427
+          h: 640
+        - file: "s015/p05.webp"
+          thumb: "s015/p05t.webp"
+          alt: "四姑娘大峰 5"
+          w: 640
+          h: 427
+    - date: "2023.03.20"
+      place: "小梧桐杜鹃与云海"
+      photos:
+        - file: "s014/p01.webp"
+          thumb: "s014/p01t.webp"
+          alt: "小梧桐杜鹃与云海 1"
+          w: 640
+          h: 427
+        - file: "s014/p02.webp"
+          thumb: "s014/p02t.webp"
+          alt: "小梧桐杜鹃与云海 2"
+          w: 640
+          h: 426
+    - date: "2023.02.25"
+      place: "阳朔银河"
+      photos:
+        - file: "s013/p01.webp"
+          thumb: "s013/p01t.webp"
+          alt: "阳朔银河 1"
+          w: 640
+          h: 426
+    - date: "2023.01.15"
+      place: "罗家拍雪"
+      photos:
+        - file: "s012/p01.webp"
+          thumb: "s012/p01t.webp"
+          alt: "罗家拍雪 1"
+          w: 426
+          h: 640
+    - date: "2023.01.08"
+      place: "老家星空"
+      photos:
+        - file: "s011/p01.webp"
+          thumb: "s011/p01t.webp"
+          alt: "老家星空 1"
+          w: 427
+          h: 640
+- year: "2022"
+  shoots:
+    - date: "2022.12.15"
+      place: "阳朔日出日落和流星雨延时"
+      photos:
+        - file: "s010/p01.webp"
+          thumb: "s010/p01t.webp"
+          alt: "阳朔日出日落和流星雨延时 1"
+          w: 640
+          h: 360
+    - date: "2022.12.11"
+      place: "东西涌冲浪炸机"
+      photos:
+        - file: "s009/p01.webp"
+          thumb: "s009/p01t.webp"
+          alt: "东西涌冲浪炸机 1"
+          w: 640
+          h: 427
+    - date: "2022.11.21"
+      place: "名马轩露营"
+      photos:
+        - file: "s008/p01.webp"
+          thumb: "s008/p01t.webp"
+          alt: "名马轩露营 1"
+          w: 640
+          h: 426
+        - file: "s008/p02.webp"
+          thumb: "s008/p02t.webp"
+          alt: "名马轩露营 2"
+          w: 426
+          h: 640
+    - date: "2022.11.19"
+      place: "夜爬梧桐"
+      photos:
+        - file: "s007/p01.webp"
+          thumb: "s007/p01t.webp"
+          alt: "夜爬梧桐 1"
+          w: 427
+          h: 640
+        - file: "s007/p02.webp"
+          thumb: "s007/p02t.webp"
+          alt: "夜爬梧桐 2"
+          w: 427
+          h: 640
+        - file: "s007/p03.webp"
+          thumb: "s007/p03t.webp"
+          alt: "夜爬梧桐 3"
+          w: 640
+          h: 426
+        - file: "s007/p04.webp"
+          thumb: "s007/p04t.webp"
+          alt: "夜爬梧桐 4"
+          w: 426
+          h: 640
+        - file: "s007/p05.webp"
+          thumb: "s007/p05t.webp"
+          alt: "夜爬梧桐 5"
+          w: 640
+          h: 640
+        - file: "s007/p06.webp"
+          thumb: "s007/p06t.webp"
+          alt: "夜爬梧桐 6"
+          w: 426
+          h: 640
+        - file: "s007/p07.webp"
+          thumb: "s007/p07t.webp"
+          alt: "夜爬梧桐 7"
+          w: 426
+          h: 640
+    - date: "2022.11.18"
+      place: "海洋楼流星"
+      photos:
+        - file: "s006/p01.webp"
+          thumb: "s006/p01t.webp"
+          alt: "海洋楼流星 1"
+          w: 427
+          h: 640
+        - file: "s006/p02.webp"
+          thumb: "s006/p02t.webp"
+          alt: "海洋楼流星 2"
+          w: 640
+          h: 426
+        - file: "s006/p03.webp"
+          thumb: "s006/p03t.webp"
+          alt: "海洋楼流星 3"
+          w: 426
+          h: 640
+    - date: "2022.10.16"
+      place: "操场微距"
+      photos:
+        - file: "s005/p01.webp"
+          thumb: "s005/p01t.webp"
+          alt: "操场微距 1"
+          w: 640
+          h: 426
+        - file: "s005/p02.webp"
+          thumb: "s005/p02t.webp"
+          alt: "操场微距 2"
+          w: 426
+          h: 640
+    - date: "2022.10.13"
+      place: "深圳湾世纪晚霞"
+      photos:
+        - file: "s004/p01.webp"
+          thumb: "s004/p01t.webp"
+          alt: "深圳湾世纪晚霞 1"
+          w: 640
+          h: 640
+        - file: "s004/p02.webp"
+          thumb: "s004/p02t.webp"
+          alt: "深圳湾世纪晚霞 2"
+          w: 640
+          h: 301
+    - date: "2022.10.02"
+      place: "欢乐谷"
+      photos:
+        - file: "s003/p01.webp"
+          thumb: "s003/p01t.webp"
+          alt: "欢乐谷 1"
+          w: 640
+          h: 426
+        - file: "s003/p02.webp"
+          thumb: "s003/p02t.webp"
+          alt: "欢乐谷 2"
+          w: 426
+          h: 640
+- year: "2021"
+  shoots:
+    - date: "2021.11.28"
+      place: "梧桐山"
+      photos:
+        - file: "s002/p01.webp"
+          thumb: "s002/p01t.webp"
+          alt: "梧桐山 1"
+          w: 640
+          h: 426
+        - file: "s002/p02.webp"
+          thumb: "s002/p02t.webp"
+          alt: "梧桐山 2"
+          w: 640
+          h: 426
+        - file: "s002/p03.webp"
+          thumb: "s002/p03t.webp"
+          alt: "梧桐山 3"
+          w: 640
+          h: 426
+        - file: "s002/p04.webp"
+          thumb: "s002/p04t.webp"
+          alt: "梧桐山 4"
+          w: 640
+          h: 426
+        - file: "s002/p05.webp"
+          thumb: "s002/p05t.webp"
+          alt: "梧桐山 5"
+          w: 640
+          h: 97
+        - file: "s002/p06.webp"
+          thumb: "s002/p06t.webp"
+          alt: "梧桐山 6"
+          w: 640
+          h: 426
+    - date: "2021.10.23"
+      place: "背仔角"
+      photos:
+        - file: "s001/p01.webp"
+          thumb: "s001/p01t.webp"
+          alt: "背仔角 1"
+          w: 640
+          h: 640
+        - file: "s001/p02.webp"
+          thumb: "s001/p02t.webp"
+          alt: "背仔角 2"
+          w: 640
+          h: 640
+        - file: "s001/p03.webp"
+          thumb: "s001/p03t.webp"
+          alt: "背仔角 3"
+          w: 640
+          h: 640
+        - file: "s001/p04.webp"
+          thumb: "s001/p04t.webp"
+          alt: "背仔角 4"
+          w: 640
+          h: 640
+        - file: "s001/p05.webp"
+          thumb: "s001/p05t.webp"
+          alt: "背仔角 5"
+          w: 640
+          h: 640
+        - file: "s001/p06.webp"
+          thumb: "s001/p06t.webp"
+          alt: "背仔角 6"
+          w: 640
+          h: 640
+        - file: "s001/p07.webp"
+          thumb: "s001/p07t.webp"
+          alt: "背仔角 7"
+          w: 640
+          h: 426
+        - file: "s001/p08.webp"
+          thumb: "s001/p08t.webp"
+          alt: "背仔角 8"
+          w: 640
+          h: 640
+        - file: "s001/p09.webp"
+          thumb: "s001/p09t.webp"
+          alt: "背仔角 9"
+          w: 640
+          h: 640
+        - file: "s001/p10.webp"
+          thumb: "s001/p10t.webp"
+          alt: "背仔角 10"
+          w: 640
+          h: 640

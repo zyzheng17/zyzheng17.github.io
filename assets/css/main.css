@@ -10,6 +10,34 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* 相册页的深色主题（默认深色，可用页面上的按钮切回浅色） */
+html[data-theme="dark"] {
+  --text-color: #e6e8ec;
+  --link-color: #7db3f0;
+  --muted-color: #9aa0a8;
+  --border-color: #2a2d33;
+  --bg-color: #0e0f12;
+  color-scheme: dark;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted-color);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.75rem;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--text-color);
+  border-color: var(--muted-color);
+}
+
 body {
   font-family: var(--font-family);
   color: var(--text-color);
@@ -370,4 +398,137 @@ a:hover { text-decoration: underline; }
     grid-template-columns: 1fr;
   }
   .pub-thumbnail { display: none; }
+}
+
+/* Photography - summary line, year jump nav, per-shoot headings */
+.photo-stats {
+  color: var(--muted-color);
+  font-size: 0.9rem;
+  margin: -1.25rem 0 1.5rem;
+}
+
+.photo-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+.photo-years a {
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted-color);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.photo-years a:hover {
+  color: var(--text-color);
+  border-color: var(--muted-color);
+  text-decoration: none;
+}
+
+.photo-year {
+  font-size: 1.35rem;
+  margin: 2.75rem 0 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border-color);
+  scroll-margin-top: 5rem;
+}
+
+.photo-shoot {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0;
+  color: var(--text-color);
+}
+
+.photo-shoot + .photo-masonry { margin-top: 0.6rem; }
+
+/* Justified rows: 同一行等高，宽度按各自比例分配——全景图因此能占满多栏 */
+.photo-masonry.is-justified {
+  column-count: initial;
+  column-gap: initial;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: flex-start;
+  margin-top: 0.6rem;
+}
+
+.photo-masonry.is-justified figure {
+  margin: 0;
+  break-inside: auto;
+  flex: 0 0 auto;
+  border-radius: 4px;
+}
+
+.photo-masonry.is-justified figure a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-masonry.is-justified figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 放大展示的照片：从新行开始并撑满整行（尺寸由脚本按比例算好，不留空白） */
+.photo-masonry.is-justified figure.featured {
+  margin: 0;
+}
+
+/* Lightbox - navigation, caption, mobile sizing */
+.lightbox-img {
+  cursor: default;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.lightbox-nav:hover { background: rgba(255, 255, 255, 0.24); }
+
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+
+.lightbox-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.25rem;
+  margin: 0;
+  padding: 0 4.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 600px) {
+  .lightbox-nav {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.55rem;
+  }
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+  .lightbox-caption { padding: 0 1rem; bottom: 0.9rem; }
 }
