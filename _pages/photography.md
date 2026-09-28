@@ -11,8 +11,6 @@ shoot_count: 42
 years: ["2026", "2025", "2024", "2023", "2022", "2021"]
 ---
 
-<p class="page-description">{{ page.description }}</p>
-
 <p class="photo-stats">{{ page.photo_count }} photos &middot; {{ page.shoot_count }} shoots &middot; {{ page.years | last }}&ndash;{{ page.years | first }}</p>
 
 <nav class="photo-years">
